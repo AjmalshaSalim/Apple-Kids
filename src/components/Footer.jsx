@@ -16,8 +16,8 @@ function Footer() {
     </div>
 
 
-        <div className='min-h-[400px] bg-fuchsia-300 rounded-tl-[80px] rounded-tr-[80px] flex flex-col justify-center items-center p-4'>
-            <div className='min-h-[350px] grid sm:grid-cols-5 mx-auto container gap-2 mt-6 space-y-2'>
+        <div className='min-h-[400px] bg-fuchsia-300 rounded-tl-[80px] rounded-tr-[80px] flex flex-col p-4'>
+            <div className='min-h-[280px] grid sm:grid-cols-5 mx-auto container gap-2 mt-6 space-y-2'>
 
 
        {/* first */}
@@ -66,17 +66,29 @@ function Footer() {
                 </div>
 
 
-                <div className='flex flex-col space-y-6 justify-start items-center'>
+                <div className='flex flex-col space-y-6 justify-start sm:items-start items-center'>
                 <h1 className="text-3xl md:text-2xl font-bold text-white">Information</h1>
-                <h3 className="text-lg md:text-md font-medium cursor-pointer text-white">Kazhakutam,Trivandrum,676552</h3>
-                <h3 className="text-lg md:text-md font-medium cursor-pointer text-white">abc@gmail.com</h3>
-                <h3 className="text-lg md:text-md font-medium cursor-pointer text-white">+91 79757212</h3>
+                <div className="flex items-center">
+      <span><img width="16" height="16" src="https://img.icons8.com/tiny-glyph/16/FFFFFF/address.png" alt="address"/></span>
+      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ">Kazhakutam,Trivandrum</h3>
+    </div> 
+    <div className="flex items-center">
+      <span><img width="16" height="16" src="https://img.icons8.com/tiny-glyph/16/FFFFFF/email.png" alt="email"/></span>
+      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ">abc@gmail.com</h3>
+    </div> 
+               
+    <div className="flex items-center">
+      <span><img width="16" height="16" src="https://img.icons8.com/tiny-glyph/16/FFFFFF/ringer-volume.png" alt="ringer-volume"/></span>
+      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ">+91 7552345617</h3>
+    </div> 
                 
                 </div>
             </div>
 
 
-            <div></div>
+            <div className='flex  sm:justify-start items-center justify-center sm:p-0 p-4 mx-auto container ' >
+               <p className='text-white sm:text-lg text-md'>jannakondeth@2024 -- This is a Sample Website</p>
+            </div>
         </div>
     </div>
     </>
