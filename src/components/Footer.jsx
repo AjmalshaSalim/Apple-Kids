@@ -3,21 +3,26 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <div className='min-h-[700px]'>
+    <div className='min-h-[600px]'>
 
-
-    <div className="min-h-[300px] flex flex-col justify-start items-center p-4  ">
-      <h1 className="font-sans text-4xl font-black w-full h-16 flex justify-center items-center tracking-wider">
-        Instagram <span className="text-red-500">@kindergarten</span>
-      </h1>
+{/* first portion */}
+    <div className="min-h-[200px] flex flex-col justify-start items-center p-4  ">
+    <h1 className="font-sans text-4xl font-black w-full h-16 flex justify-center items-center tracking-wider">
+  Instagram&nbsp;<span className="text-red-500">@kindergarten</span>
+</h1>
       <p className="font-sans text-sm text-center tracking-wider">
         We're always up to something good. Follow along and don't miss a minute.
       </p>
+      {/* <div class="elementor-widget-container" style="transform: rotate(5.15065deg);">
+        <img loading="lazy" decoding="async" width="167" height="206" src="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png" class="attachment-full size-full wp-image-27721 cmsmasters_img cmsmasters-lazyload ls-is-cached lazyloaded" alt="" data-sizes="(max-width: 167px) 100vw, 167px" data-src="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png" data-srcset="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png 167w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-30x37.png 30w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-8x10.png 8w" srcset="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png 167w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-30x37.png 30w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-8x10.png 8w" sizes="(max-width: 167px) 100vw, 167px"/>												
+	</div> */}
     </div>
 
 
-        <div className='min-h-[400px] bg-fuchsia-300 rounded-tl-[80px] rounded-tr-[80px] flex flex-col p-4'>
-            <div className='min-h-[280px] grid sm:grid-cols-5 mx-auto container gap-2 mt-6 space-y-2'>
+{/* second portion */}
+
+        <div className='min-h-[500px] bg-fuchsia-400 rounded-tl-[80px] rounded-tr-[80px] flex flex-col p-4'>
+            <div className='min-h-[400px] grid sm:grid-cols-5 mx-auto container gap-2 mt-6 space-y-2'>
 
 
        {/* first */}
@@ -70,16 +75,16 @@ function Footer() {
                 <h1 className="text-3xl md:text-2xl font-bold text-white">Information</h1>
                 <div className="flex items-center">
       <span><img width="16" height="16" src="https://img.icons8.com/tiny-glyph/16/FFFFFF/address.png" alt="address"/></span>
-      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ">Kazhakutam,Trivandrum</h3>
+      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ml-2 ">Kazhakutam,Trivandrum</h3>
     </div> 
     <div className="flex items-center">
       <span><img width="16" height="16" src="https://img.icons8.com/tiny-glyph/16/FFFFFF/email.png" alt="email"/></span>
-      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ">abc@gmail.com</h3>
+      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ml-2 ">abc@gmail.com</h3>
     </div> 
                
     <div className="flex items-center">
       <span><img width="16" height="16" src="https://img.icons8.com/tiny-glyph/16/FFFFFF/ringer-volume.png" alt="ringer-volume"/></span>
-      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ">+91 7552345617</h3>
+      <h3 className="text-lg md:text-md font-medium cursor-pointer text-white ml-2">+91 7552345617</h3>
     </div> 
                 
                 </div>
