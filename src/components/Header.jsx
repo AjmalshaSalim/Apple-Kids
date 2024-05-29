@@ -30,6 +30,7 @@ function Header() {
 
         {/* navlinkssection */}
         <div className={`flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-5 md:justify-center justify-start items-center sm:flex ${isOpen ? 'flex' : 'hidden'} sm:block sm:p-4 sm:col-span-8`}>
+          
           <h3 className='text-lg font-bold font-mono'>Home</h3>
           <h3 className='text-lg font-bold font-mono'>About</h3>
           <h3 className='text-lg font-bold font-mono'>Events</h3>

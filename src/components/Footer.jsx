@@ -3,10 +3,10 @@ import React from 'react'
 function Footer() {
   return (
     <>
-    <div className='min-h-[600px]'>
+    <div className='min-h-[700px]'>
 
 {/* first portion */}
-    <div className="min-h-[200px] flex flex-col justify-start items-center p-4  ">
+    <div className="min-h-[300px] flex flex-col justify-start items-center p-4  ">
     <h1 className="font-sans text-4xl font-black w-full h-16 flex justify-center items-center tracking-wider">
   Instagram&nbsp;<span className="text-red-500">@kindergarten</span>
 </h1>

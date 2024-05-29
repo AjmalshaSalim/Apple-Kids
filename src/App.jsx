@@ -1,8 +1,9 @@
 
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Home from './components/Home'
-import Homemid from './components/Homemid'
+import HomePage from './pages/HomePage'
+
+
 
 function App() {
 
@@ -10,8 +11,7 @@ function App() {
   return (
     <>
     <Header/>
-      <Home/>
-      <Homemid/>
+      <HomePage/>
     <Footer/>
     </>
   )
