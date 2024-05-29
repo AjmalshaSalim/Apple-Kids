@@ -2,6 +2,7 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/Home'
+import Homemid from './components/Homemid'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <Header/>
       <Home/>
+      <Homemid/>
     <Footer/>
     </>
   )
