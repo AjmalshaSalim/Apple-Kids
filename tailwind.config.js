@@ -10,6 +10,9 @@ export default {
         sans: [ 'sans-serif'],
         serif: ['Merriweather', 'serif'], 
       },
+      borderRadius: {
+        'custom-top': '20px 150px 0 0', // Adjust the values as needed
+      },
     },
   },
   plugins: [],
