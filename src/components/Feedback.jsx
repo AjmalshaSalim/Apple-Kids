@@ -49,41 +49,41 @@ function Feedback() {
    
   return (
     <div className='min-h-[300px]'>
-     <div className="bg-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">Testimonials</h2>
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={3}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            1024: { slidesPerView: 3 },
-            768: { slidesPerView: 2 },
-            640: { slidesPerView: 1 },
-          }}
-        >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.id}>
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                  />
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-800">{testimonial.name}</h3>
-                    <p className="text-gray-600">{testimonial.title}</p>
-                  </div>
+  <div className="bg-gray-100 py-12">
+    <div className="container mx-auto px-4">
+      <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 font-mono">what parents say</h2>
+      <Swiper
+        spaceBetween={30}
+        slidesPerView={3}
+        pagination={{ clickable: true }}
+        breakpoints={{
+          1024: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          360: { slidesPerView: 1 },
+        }}
+      >
+        {testimonials.map((testimonial) => (
+          <SwiperSlide key={testimonial.id}>
+            <div className="bg-white p-6 rounded-lg border-2 border-red-300 border-t-red-300 border-l-red-700 shadow-lg flex flex-col justify-between">
+              <div className="flex items-center mb-4">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800">{testimonial.name}</h3>
+                  <p className="text-gray-600">{testimonial.title}</p>
                 </div>
-                <p className="text-gray-700 italic">"{testimonial.feedback}"</p>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+              <p className="text-gray-700 italic">"{testimonial.feedback}"</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
-    </div>
+  </div>
+</div>
   )
 }
 
