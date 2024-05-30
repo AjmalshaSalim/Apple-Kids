@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import homeMainImage from '../assets/images/home-main-3.png'
+import '../App.css'
 
 import Navbar from './Navbar';
 
@@ -14,6 +16,7 @@ function Header() {
 
       {/* subHeaderSection */}
       <div className='w-auto min-h-[500px] grid sm:grid-cols-2'>
+
         <div className='sm:block hidden'>
           <img
             decoding="async"
@@ -23,7 +26,11 @@ function Header() {
           />
         </div>
         
-        <div className='flex flex-col justify-center items-center space-y-6 p-4'>
+        <div className='flex flex-col justify-center sm:items-start items-center space-y-6 p-4 bg-no-repeat animate-bg'  style={{backgroundImage:`url(${homeMainImage})` ,
+          backgroundPosition:  ' right bottom',
+          
+          
+          }}>
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold font-serif text-center'>
             Little Minds <br /> Grow Here !!
           </h1>
@@ -37,8 +44,12 @@ function Header() {
             <button className='bg-pink-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg'>
               Contact US
             </button>
+            
           </div>
+         
         </div>
+        
+
       </div>
       
     </div>

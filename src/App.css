@@ -1,0 +1,17 @@
+/* App.css */
+@keyframes moveBackground {
+    0% {
+      background-position: left bottom;
+    }
+    50% {
+      background-position: right bottom;
+    }
+    100% {
+      background-position: left bottom;
+    }
+  }
+  
+  .animate-bg {
+    animation: moveBackground 10s linear infinite;
+  }
+  

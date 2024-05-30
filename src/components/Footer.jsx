@@ -1,4 +1,5 @@
 import React from 'react'
+import aama from '../assets/images/svg-element-12.svg'
 
 function Footer() {
   return (
@@ -13,9 +14,15 @@ function Footer() {
       <p className="font-sans text-sm text-center tracking-wider">
         We're always up to something good. Follow along and don't miss a minute.
       </p>
+      <img  className=' w-52 h-56' src={aama} alt='aama'/>
+     
+     
       {/* <div class="elementor-widget-container" style="transform: rotate(5.15065deg);">
         <img loading="lazy" decoding="async" width="167" height="206" src="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png" class="attachment-full size-full wp-image-27721 cmsmasters_img cmsmasters-lazyload ls-is-cached lazyloaded" alt="" data-sizes="(max-width: 167px) 100vw, 167px" data-src="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png" data-srcset="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png 167w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-30x37.png 30w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-8x10.png 8w" srcset="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34.png 167w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-30x37.png 30w, https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/08/home-main-34-8x10.png 8w" sizes="(max-width: 167px) 100vw, 167px"/>												
 	</div> */}
+
+
+
     </div>
 
 
@@ -92,7 +99,7 @@ function Footer() {
 
 
             <div className='flex  sm:justify-start items-center justify-center sm:p-0 p-4 mx-auto container ' >
-               <p className='text-white sm:text-lg text-md'>jannakondeth@2024 -- This is a Sample Website</p>
+               <p className='text-white sm:text-lg text-md'>a2zalphabetsolutionz@2024 -- This is a Sample Website</p>
             </div>
         </div>
     </div>
