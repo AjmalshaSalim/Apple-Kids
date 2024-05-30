@@ -56,22 +56,22 @@ function Events() {
          {/* card section */}
 
          <div className='min-h-[500px]'>
-      <div className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {newsItems.map((item) => (
-              <div key={item.id} className="bg-white p-6 rounded-lg shadow-lg">
-                <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-t-lg" />
-                <div className="mt-4">
-                  <h3 className="text-2xl font-bold text-gray-800">{item.title}</h3>
-                  <p className="text-gray-600">{item.date}</p>
-                  <p className="mt-2 text-gray-700">{item.description}</p>
-                </div>
-              </div>
-            ))}
+         <div className="bg-gray-100 py-12">
+  <div className="container mx-auto px-4">
+    <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {newsItems.map((item) => (
+        <div key={item.id} className="bg-white p-6 rounded-lg shadow-lg border border-red-200 hover:border-red-600 transition duration-300 ease-in-out">
+          <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-t-lg border-b border-gray-200" />
+          <div className="mt-4">
+            <h3 className="text-2xl font-bold text-gray-800">{item.title}</h3>
+            <p className="text-gray-600">{item.date}</p>
+            <p className="mt-2 text-gray-700">{item.description}</p>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
         </div>
 
        {/* subscribeform */}

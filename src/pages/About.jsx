@@ -49,7 +49,7 @@ function About() {
        {/* mid-section */}
        <div className='min-h-[300px] bg-gray-200 flex justify-start items-center flex-col gap-4 px-4 rounded-custom-top '>
        <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center font-mono sm:mt-4 mt-2">
-        Lorem, ipsum dolor sit.
+        Lorem, ipsum dolor.
       </h1>
       <p className="text-base font-normal text-gray-600 leading-relaxed w-4/5 mx-auto text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sunt veniam optio cupiditate exercitationem ratione, nisi aliquid temporibus voluptates nemo quibusdam in fuga illo. Molestiae officiis fuga praesentium provident pariatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam suscipit dolorem nisi non voluptas, dicta placeat eaque ex itaque aut ducimus expedita fugiat sed labore dolores saepe consequatur. Qui!.
