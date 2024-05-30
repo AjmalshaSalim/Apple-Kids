@@ -21,7 +21,7 @@ function Footer() {
 
 {/* second portion */}
 
-        <div className='min-h-[500px] bg-fuchsia-400 rounded-tl-[80px] rounded-tr-[80px] flex flex-col p-4'>
+        <div className='min-h-[500px] bg-fuchsia-300 rounded-tl-[80px] rounded-tr-[80px] flex flex-col p-4'>
             <div className='min-h-[400px] grid sm:grid-cols-5 mx-auto container gap-2 mt-6 space-y-2'>
 
 

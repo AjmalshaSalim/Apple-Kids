@@ -64,7 +64,7 @@ function Feedback() {
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="bg-white p-6 rounded-lg border-2 border-red-300 border-t-red-300 border-l-red-700 shadow-lg flex flex-col justify-between">
+            <div className="bg-white p-6 rounded-lg border-2 border-red-300 border-t-red-300 border-l-red-700 shadow-lg flex flex-col justify-between hover:shadow-lg transform hover:-translate-y-1 transition duration-300">
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.image}

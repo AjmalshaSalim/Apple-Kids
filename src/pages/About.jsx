@@ -1,14 +1,29 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Feedback from '../components/Feedback'
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
+
 
 function About() {
+  const { ref: facilityRef, inView: facilityInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5, // Adjust this value based on when you want to trigger the animation
+  });
+  const { ref: staffRef, inView: staffInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const { ref: experienceRef, inView: experienceInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   return (
       <>
        <Navbar/>
  
       {/* Banner section */}
-       <div className='min-h-[300px] bg-yellow-200 flex justify-center items-center flex-col gap-6'>
+       <div className='min-h-[300px] bg-gray-200 flex justify-center items-center flex-col gap-6'>
        <h1 className="font-bold text-2xl text-white font-mono sm:text-3xl md:text-4xl lg:text-5xl">About Us</h1>
       <p className="font-bold text-white font-sans sm:text-lg md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet</p>
        </div>
@@ -45,6 +60,21 @@ function About() {
       {/* feedback section */}
 
      <Feedback/>
+
+     <div className='min-h-[200px] bg-yellow-200 grid sm:grid-cols-3'>
+      <div ref={facilityRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
+        {facilityInView && <CountUp end={20} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
+        <h2 className='text-2xl font-semibold text-gray-700'>Facility</h2>
+      </div>
+      <div ref={staffRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
+        {staffInView && <CountUp end={8} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
+        <h2 className='text-2xl font-semibold text-gray-700'>Staff</h2>
+      </div>
+      <div ref={experienceRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
+        {experienceInView && <CountUp end={10} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
+        <h2 className='text-2xl font-semibold text-gray-700'>Experience</h2>
+      </div>
+    </div>
 
 
 
