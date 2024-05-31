@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Feedback from '../components/Feedback'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import aboutImage from '../assets/images/home-main-4.png'
 
 
 function About() {
@@ -18,6 +19,7 @@ function About() {
     triggerOnce: true,
     threshold: 0.5,
   });
+ 
   return (
       <>
        <Navbar/>
@@ -34,7 +36,8 @@ function About() {
           <div className='flex justify-center items-center sm:mt-0  mt-6 '>
           <img  className=' w-72 h-80 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
           </div>
-          <div className='flex flex-col justify-center sm:items-start gap-2 items-center'>
+          <div className='flex flex-col justify-center sm:items-start gap-2 items-center bg-no-repeat ' style={{backgroundImage :`url(${aboutImage})`,
+           backgroundPosition:'right bottom'}}>
           <h1 className='text-2xl sm:text-3xl md:text-3xl font-bold font-serif text-center '>
                 
                 About Apple Kids🍎
