@@ -2,26 +2,32 @@ import React from 'react'
 
 const teachers = [
   {
-    name: 'John Doe',
-    subject: 'Mathematics',
+    name: 'Bushra Basheer',
+    subject: 'Principal',
     image: 'https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    name: 'Jane Smith',
-    subject: 'Science',
+    name: 'Shaika Aysha Shehna',
+    subject: 'Academic Coordinator',
     image: 'https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    name: 'Mike Johnson',
-    subject: 'History',
+    name: 'Afsana',
+    subject: 'Montessori',
     image: 'https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
-    name: 'Emily Davis',
-    subject: 'English',
+    name: 'Amina',
+    subject: 'CTTC',
+    image: 'https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    name: 'Fathima',
+    subject: 'Dheeniyath',
     image: 'https://images.pexels.com/photos/3772511/pexels-photo-3772511.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 ];
+
 
 function Teachers() {
   return (

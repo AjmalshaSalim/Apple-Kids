@@ -34,7 +34,7 @@ function Header() {
             Little Minds <br /> Grow Here !!
           </h1>
           <p className='text-base sm:text-lg md:text-xl '>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. ratione de
+           Where every day is an adventure in learning!
           </p>
           <div className='flex space-x-4'>
             <Link to='/about'>
