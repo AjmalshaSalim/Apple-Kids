@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 
 function Events() {
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+
     const newsItems = [
         {
           id: 1,
@@ -41,6 +48,13 @@ function Events() {
           },
         // Add more news items as needed
       ];
+
+      const currentItems = newsItems.slice(indexOfFirstItem, indexOfLastItem);
+      const totalPages = Math.ceil(newsItems.length / itemsPerPage);
+
+      const handlePageChange = (pageNumber) => {
+        setCurrentPage(pageNumber);
+      };
   return (
     <>
          <Navbar/>
@@ -55,11 +69,11 @@ function Events() {
 
          {/* card section */}
 
-         <div className='min-h-[500px]'>
-         <div className="bg-gray-100 py-12">
+         <div className='min-h-[500px] bg-gray-100'>
+         <div className=" py-12">
   <div className="container mx-auto px-4">
     <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {newsItems.map((item) => (
+      {currentItems.map((item) => (
         <div key={item.id} className="bg-white p-6 rounded-lg shadow-lg border border-red-200 hover:border-red-600 transition duration-300 ease-in-out">
           <img src={item.image} alt={item.title} className="w-full h-48 object-cover rounded-t-lg border-b border-gray-200" />
           <div className="mt-4">
@@ -72,6 +86,22 @@ function Events() {
     </div>
   </div>
 </div>
+<div className='flex justify-center items-center p-4'>
+    <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="mx-1 px-3 py-2 bg-gray-400 text-gray-700 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Previous
+            </button>
+    <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="mx-1 px-3 py-2 bg-gray-400 text-gray-700 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Next
+            </button>
+    </div>
         </div>
 
        {/* subscribeform */}
