@@ -1,4 +1,5 @@
 import React from 'react'
+import Classes from './Classes'
 
 function Home() {
   return (
@@ -13,13 +14,13 @@ function Home() {
     A day full of discoveries<br />and knowledge!
   </h1>
   <p className='text-base sm:text-lg md:text-xl text-center'>
-    Lorem ipsum dolor sit amet, consectetloreos veniam molestiae id.
+     Explore Our Ongoing Classes!!!
   </p>
 </div>
 
 
         {/* card section */}
-        <div className=' min-h-[400px] flex sm:flex-row flex-col gap-10 justify-center items-center'>
+        {/* <div className=' min-h-[400px] flex sm:flex-row flex-col gap-10 justify-center items-center'>
 
 
         <div className='bg-white border border-gray-300 rounded-sm rounded-tl-lg w-52 h-64 p-4 shadow-md'>
@@ -49,7 +50,8 @@ function Home() {
         </div>
 
         </div>
- 
+  */}
+  <Classes/>
 
     </div>
   )
