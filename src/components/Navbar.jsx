@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import logo from '../assets/images/logokids.jpg'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,9 @@ function Navbar() {
               title="Los Niños Main"
               className="cmsmasters-lazyload-disabled elementor-widget-cmsmasters-site-logo__img elementor-widget-cmsmasters-site-logo-main"
             />
+            {/* <img  src={logo}  alt="Apple kids"
+              title="Apple kids"
+              className="cmsmasters-lazyload-disabled elementor-widget-cmsmasters-site-logo__img elementor-widget-cmsmasters-site-logo-main w-20 h-20"/> */}
           </a>
           <div className='sm:hidden'>
             <button onClick={toggleMenu}>

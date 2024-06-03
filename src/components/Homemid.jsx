@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Homemid() {
   return (
@@ -11,9 +12,12 @@ function Homemid() {
             <p className='text-base sm:text-lg md:text-xl text-center'>
                 Get the right mortgage to buy your new home — or refinance to take advantage of low rates or convert equity into cash. We've got the personal service to guide you along the way.
             </p>
+            <Link to='/about' >
             <button className='bg-cyan-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg'>
                 About Us
             </button>
+            </Link>
+           
         </div>
 
 

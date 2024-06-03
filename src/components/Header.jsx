@@ -3,6 +3,7 @@ import homeMainImage from '../assets/images/home-main-3.png'
 import '../App.css'
 
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -26,24 +27,27 @@ function Header() {
           />
         </div>
         
-        <div className='flex flex-col justify-center sm:items-start items-center space-y-6 p-4 bg-no-repeat animate-bg'  style={{backgroundImage:`url(${homeMainImage})` ,
-          backgroundPosition:  ' right bottom',
-          
-          
+        <div className='flex flex-col justify-center  items-start space-y-6 p-4 bg-no-repeat animate-bg'  style={{backgroundImage:`url(${homeMainImage})` ,
+          backgroundPosition:  ' right bottom',  
           }}>
-          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold font-serif text-center'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold font-serif '>
             Little Minds <br /> Grow Here !!
           </h1>
-          <p className='text-base sm:text-lg md:text-xl text-center'>
+          <p className='text-base sm:text-lg md:text-xl '>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. ratione de
           </p>
           <div className='flex space-x-4'>
+            <Link to='/about'>
             <button className='bg-cyan-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg'>
               About US
             </button>
-            <button className='bg-pink-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg'>
+            </Link>
+           <Link to='/contact'>
+           <button className='bg-pink-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg'>
               Contact US
             </button>
+           </Link>
+            
             
           </div>
          
