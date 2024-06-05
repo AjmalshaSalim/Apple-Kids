@@ -1,4 +1,6 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const ongoingClasses = [
     {
@@ -48,7 +50,7 @@ const ongoingClasses = [
     },
     {
       id: 6,
-      name: 'Handwriting Development Course (7 hours only)',
+      name: 'Handwriting Development Course ',
       description: 'Special course to improve handwriting skills, conducted over a 7-hour period.',
       image: 'https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=600',
       ageGroup: 'All ages',
@@ -62,25 +64,39 @@ function Classes() {
   return (
     <>
     <div className='min-h-[500px] '>
-      <div className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {ongoingClasses.map((item) => (
-              <div key={item.id} className="bg-white p-4 rounded-lg shadow-lg">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-64 object-cover rounded-lg"
-                  loading="lazy"
-                />
-                <h2 className="text-xl font-bold mt-4">{item.name}</h2>
-                <p className="text-gray-700">{item.description}</p>
-               
-              </div>
-            ))}
-          </div>
-        </div>
+    <div className="py-12">
+      <div className="container mx-auto px-4">
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={3}
+          freeMode={true}
+          grabCursor={true}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            1024: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            360: { slidesPerView: 1 },
+          }}
+        >
+          {ongoingClasses.map((item) => (
+            <SwiperSlide
+              key={item.id}
+              style={{ width: '250px' }}
+              className="bg-white p-4 rounded-lg shadow-lg"
+            >
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-64 object-cover rounded-lg"
+                loading="lazy"
+              />
+              <h2 className="text-xl font-bold mt-4 h-16">{item.name}</h2>
+              <p className="text-gray-700 h-24">{item.description}</p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
+    </div>
     </div>
     </>
 

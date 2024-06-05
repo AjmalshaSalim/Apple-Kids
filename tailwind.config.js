@@ -13,6 +13,7 @@ export default {
       borderRadius: {
         'custom-top': '20px 150px 0 0', // Adjust the values as needed
       },
+      
     },
   },
   plugins: [],
