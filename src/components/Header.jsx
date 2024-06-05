@@ -10,7 +10,7 @@ import HomeAbout from './HomeAbout';
 function Header() {
   
   return (
-   <div className='min-h-[600px] bg-gray-200 w-auto'>
+   <div className='min-h-[600px] bg-gray-200 w-auto overflow-hidden'>
       {/* navsection */}
       <Navbar/>
 
