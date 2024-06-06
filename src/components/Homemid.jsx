@@ -19,39 +19,37 @@ function Homemid() {
   return (
     <>
    
+   <div className='min-h-[450px] grid grid-cols-1 lg:grid-cols-12 bg-gray-200 p-4'>
 
-    <div className='min-h-[450px] bg-blue-100 grid sm:grid-cols-3'>
+   {/* 1st div */}
+  <div className='flex justify-center items-center lg:col-span-4'>
+    <img className='w-72 h-96 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
+  </div>
 
+  {/* 2nd div */}
+  <div className='flex justify-center lg:items-start items-center flex-col gap-6 lg:col-span-3 p-4'>
+    <button className='bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg h-8'>
+      why choose us?
+    </button>
+    {tabs.map((tab, index) => (
+      <p
+        key={index}
+        className={`text-lg border-2 border-t-4 border-l-4 border-pink-200 rounded-lg p-1 text-center w-72 cursor-pointer ${selectedTab.title === tab.title ? 'bg-pink-200' : ''}`}
+        onClick={() => handleTabClick(tab)}
+      >
+        {tab.title}
+      </p>
+    ))}
+  </div>
 
-       <div className='flex justify-center items-center'>
-            <img  className=' w-72 h-96 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
-       </div>
+  {/* 3rd div */}
+  <div className='flex lg:justify-start justify-center items-center mt-4 ml-4 lg:col-span-5'>
+    <p className='text-lg rounded-lg p-4 text-center w-full sm:w-96 border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300'>
+      {selectedTab.description}
+    </p>
+  </div>
 
-       {/* 2nd div */}
-       <div className='flex justify-center sm:items-start items-center flex-col gap-6'>
-        <button className='bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg h-8'>
-          why choose us?
-        </button>
-        {tabs.map((tab, index) => (
-          <p
-            key={index}
-            className={`text-lg border-2 border-indigo-200 border-t-indigo-500 rounded-lg p-1 text-center w-72 cursor-pointer ${selectedTab.title === tab.title ? 'bg-indigo-200' : ''}`}
-            onClick={() => handleTabClick(tab)}
-          >
-            {tab.title}
-          </p>
-        ))}
-      </div>
-
-{/* 3rd div */}
-<div className='flex justify-start items-center mt-4 ml-4'>
-  <p className='text-lg border-2 border-t-4 border-l-4 border-purple-200 border-t-purple-500 border-l-purple-500 rounded-lg p-1 text-center w-72'>
-    {selectedTab.description}
-  </p>
 </div>
-
-
-    </div>
 
     </>
   )
