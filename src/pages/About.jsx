@@ -1,24 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Feedback from '../components/Feedback'
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
+import Countup from '../components/Countup'
 import aboutImage from '../assets/images/home-main-4.png'
+import Homecards from '../components/Homecards'
 
 
 function About() {
-  const { ref: facilityRef, inView: facilityInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5, // Adjust this value based on when you want to trigger the animation
-  });
-  const { ref: staffRef, inView: staffInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-  const { ref: experienceRef, inView: experienceInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+ 
  
   return (
       <>
@@ -60,24 +49,12 @@ function About() {
      
        </div>
 
+<Homecards/>
       {/* feedback section */}
 
      <Feedback/>
 
-     <div className='min-h-[200px] bg-yellow-200 grid sm:grid-cols-3'>
-      <div ref={facilityRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-        {facilityInView && <CountUp end={20} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
-        <h2 className='text-2xl font-semibold text-gray-700'>Facility</h2>
-      </div>
-      <div ref={staffRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-        {staffInView && <CountUp end={8} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
-        <h2 className='text-2xl font-semibold text-gray-700'>Staff</h2>
-      </div>
-      <div ref={experienceRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-        {experienceInView && <CountUp end={10} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
-        <h2 className='text-2xl font-semibold text-gray-700'>Experience</h2>
-      </div>
-    </div>
+     <Countup/>
 
 
 
