@@ -1,5 +1,7 @@
 import React from 'react'
 import Classes from './Classes'
+import Countup from './Countup'
+import Homecards from './Homecards'
 
 function Home() {
   return (
@@ -19,39 +21,10 @@ function Home() {
 </div>
 
 
-        {/* card section */}
-        {/* <div className=' min-h-[400px] flex sm:flex-row flex-col gap-10 justify-center items-center'>
-
-
-        <div className='bg-white border border-gray-300 rounded-sm rounded-tl-lg w-52 h-64 p-4 shadow-md'>
-           <img width="48" height="48" src="https://img.icons8.com/dusk/64/curriculum.png" alt="curriculum"/>
-            <h3 className='text-lg font-semibold mb-2 mt-4'>Card Title</h3>
-            <p className='text-sm text-gray-700'>This is a card description. Add some text here to describe the content of the card.</p>
-        </div>
-
-
-
-        <div className='bg-white border border-gray-300 rounded-lg w-52 h-64 p-4 shadow-md'>
-            <img width="48" height="48" src="https://img.icons8.com/office/16/star--v1.png" alt="star--v1"/>
-            <h3 className='text-lg font-semibold mb-2 mt-4'>Card Title</h3>
-             <p className='text-sm text-gray-700'>This is a card description. Add some text here to describe the content of the card.</p>
-        </div>
-
-        <div className='bg-white border border-gray-300 rounded-lg w-52 h-64 p-4 shadow-md'>
-              <img width="48" height="48" src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/external-Feedback-customer-review-bearicons-outline-color-bearicons.png" alt="external-Feedback-customer-review-bearicons-outline-color-bearicons"/>
-             <h3 className='text-lg font-semibold mb-2 mt-4'>Card Title</h3>
-             <p className='text-sm text-gray-700'>This is a card description. Add some text here to describe the content of the card.</p>
-        </div>
-
-        <div className='bg-white border border-gray-300 rounded-lg w-52 h-64 p-4 shadow-md'>
-            <img width="48" height="48" src="https://img.icons8.com/glassmorphism/48/graduation-cap.png" alt="graduation-cap"/>
-            <h3 className='text-lg font-semibold mb-2 mt-4'>Card Title</h3>
-            <p className='text-sm text-gray-700'>This is a card description. Add some text here to describe the content of the card.</p>
-        </div>
-
-        </div>
-  */}
+       
   <Classes/>
+  <Countup/>
+  <Homecards/>
 
     </div>
   )

@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
-import { Autoplay } from 'swiper/modules';
-
 import { Navigation } from 'swiper/modules';
-
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 
 // Install Swiper modules
 // Swiper.use([Navigation]);
@@ -71,18 +67,7 @@ const ongoingClasses = [
   
 
 function Classes() {
-  // const cards = [
-  //   <div>Card 1</div>,
-  //   <div>Card 2</div>,
-  //   <div>Card 3</div>,
-  //   <div>Card 4</div>,
-  //   <div>Card 5</div>,
-  //   <div>Card 6</div>,
-  //   <div>Card 7</div>,
-  //   <div>Card 8</div>,
-  //   <div>Card 9</div>,
-  // ];
- 
+  
   return (
     <>
     <div className='min-h-[500px] '>
@@ -98,13 +83,11 @@ function Classes() {
           slidesPerView={3}
           freeMode={true}
           grabCursor={true}
-          pagination={true}
           navigation
-           
            breakpoints={{
             1024: { slidesPerView: 3 },
             768: { slidesPerView: 2 },
-            360: { slidesPerView: 1 },
+            260: { slidesPerView: 1 },
           }}
         >
           {ongoingClasses.map((item) => (

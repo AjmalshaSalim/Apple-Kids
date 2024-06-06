@@ -1,25 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Homemid() {
+  const tabs = [
+    { title: 'Innovative Learning', description:"This approach to learning focuses on using new and creative methods to enhance the learning experience. It often involves the use of technology, interactive tools, and unconventional teaching methods to engage students and promote a deeper understanding of the subject matter." },
+    { title: 'Experienced Educators', description:"  Experienced educators are teachers or instructors who have a significant amount of teaching experience. They have spent years honing their craft and have a deep understanding of the subjects they teach. They are often sought after for their expertise and ability to effectively communicate complex ideas to students."},
+    { title: 'Interactive Learning', description: " Interactive learning is a teaching method that actively involves students in the learning process. It encourages students to participate, ask questions, and engage with the material in a meaningful way. This approach can improve retention and understanding by making learning more engaging and relevant to students' lives." },
+    { title: 'Cultural Diversity', description:" Cultural diversity refers to the presence of a variety of cultural groups within a society or organization. It encompasses differences in race, ethnicity, language, religion, and other cultural factors. Embracing cultural diversity promotes inclusivity, understanding, and respect for different perspectives and ways of life." },
+  ];
+
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
+
+
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+  };
+
   return (
     <>
    
 
-    <div className='min-h-[400px] bg-blue-100 grid sm:grid-cols-2 '>
+    <div className='min-h-[450px] bg-blue-100 grid sm:grid-cols-3'>
+
+
        <div className='flex justify-center items-center'>
-            <img  className=' w-72 h-80 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
+            <img  className=' w-72 h-96 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
        </div>
+
+       {/* 2nd div */}
        <div className='flex justify-center sm:items-start items-center flex-col gap-6'>
-            <button className='bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg h-8  '>
-               why choose us?
-             </button>
-             <p className="text-lg border-2 border-indigo-200 border-t-indigo-500 rounded-lg p-1 text-center w-72">Innovative Learning</p>
-            <p className="text-lg border-2 border-indigo-200 border-t-indigo-500 rounded-lg p-1 text-center w-72">Experienced Educators</p>
-            <p className="text-lg border-2 border-indigo-200 border-t-indigo-500 rounded-lg p-1 text-center w-72">Interactive Learning</p>
-            <p className="text-lg border-2 border-indigo-200 border-t-indigo-500 rounded-lg p-1 text-center w-72">Cultural Diversity</p>
-             
-       </div>
+        <button className='bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg h-8'>
+          why choose us?
+        </button>
+        {tabs.map((tab, index) => (
+          <p
+            key={index}
+            className={`text-lg border-2 border-indigo-200 border-t-indigo-500 rounded-lg p-1 text-center w-72 cursor-pointer ${selectedTab.title === tab.title ? 'bg-indigo-200' : ''}`}
+            onClick={() => handleTabClick(tab)}
+          >
+            {tab.title}
+          </p>
+        ))}
+      </div>
+
+{/* 3rd div */}
+<div className='flex justify-start items-center mt-4 ml-4'>
+  <p className='text-lg border-2 border-t-4 border-l-4 border-purple-200 border-t-purple-500 border-l-purple-500 rounded-lg p-1 text-center w-72'>
+    {selectedTab.description}
+  </p>
+</div>
+
+
     </div>
 
     </>
