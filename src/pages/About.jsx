@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Feedback from '../components/Feedback'
+// import Feedback from '../components/Feedback'
 import Countup from '../components/Countup'
 import aboutImage from '../assets/images/home-main-4.png'
 import Homecards from '../components/Homecards'
@@ -52,7 +52,7 @@ function About() {
 <Homecards/>
       {/* feedback section */}
 
-     <Feedback/>
+     {/* <Feedback/> */}
 
      <Countup/>
 
