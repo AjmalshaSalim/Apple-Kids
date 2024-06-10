@@ -73,10 +73,10 @@ function Classes ()  {
 
   return (
     <div className='min-h-[500px] '>
-//     <div className="py-12">
-//       <div className="container mx-auto px-4">
+    <div className="py-12">
+      <div className="container mx-auto px-4">
     <Swiper
-      // install Swiper modules
+      
       modules={[Navigation, A11y]}
       spaceBetween={50}
       slidesPerView={3}
