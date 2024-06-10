@@ -1,5 +1,5 @@
 import React from 'react'
-// import Classes from './Classes'
+import Classes from './Classes'
 import Countup from './Countup'
 import Homecards from './Homecards'
 
@@ -21,8 +21,8 @@ function Home() {
 </div>
 
 
-{/*        
-  <Classes/> */}
+       
+  <Classes/>
   <Countup/>
   <Homecards/>
 
