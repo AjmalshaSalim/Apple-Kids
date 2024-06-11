@@ -2,6 +2,7 @@ import React from 'react'
 import Classes from './Classes'
 import Countup from './Countup'
 import Homecards from './Homecards'
+import HomeAbout from './HomeAbout'
 
 function Home() {
   return (
@@ -21,10 +22,12 @@ function Home() {
 </div>
 
 
-       
+<Homecards/>
+<HomeAbout/>
+<Countup/>
   <Classes/>
-  <Countup/>
-  <Homecards/>
+  
+  
 
     </div>
   )
