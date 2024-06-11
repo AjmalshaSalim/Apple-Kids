@@ -62,11 +62,11 @@ function Header() {
             className=' w-[100px] h-[100px] absolute right-0 sm:top-0  sm:block hidden'
             alt="Illustration"
              />
-             <div className=' flex flex-col pb-10 space-y-5 justify-center sm:items-start items-center'>
+             <div className=' flex flex-col sm:pb-10 pb-[100px] space-y-5 justify-center sm:items-start items-center '>
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold font-serif '>
             Little Minds <br /> Grow Here !!
           </h1>
-          <p className='text-base sm:text-lg md:text-xl '>
+          <p className='text-base sm:text-lg md:text-xl text-center '>
            Where every day is an adventure in learning!
           </p>
           <div className='flex space-x-4'>
