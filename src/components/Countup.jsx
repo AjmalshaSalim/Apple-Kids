@@ -24,23 +24,23 @@ function Countup() {
     <>
 
     
-    <div className='min-h-[200px] bg-yellow-200 grid sm:grid-cols-4'>
+    <div className='min-h-[200px] bg-[#F06D4F] grid sm:grid-cols-4 '>
     <div ref={studentsRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-      {studentsInView && <CountUp end={100} duration={2}  suffix="+" className='text-6xl font-extrabold text-yellow-600' />} 
+      {studentsInView && <CountUp end={100} duration={2}  suffix="+" className='text-6xl font-extrabold text-white ' />} 
       
-      <h2 className='text-2xl font-semibold text-gray-700'>Total students</h2>
+      <h2 className='text-2xl font-semibold text-white'>Total students</h2>
     </div>
     <div ref={facilityRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-      {facilityInView && <CountUp end={20} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
-      <h2 className='text-2xl font-semibold text-gray-700'>services</h2>
+      {facilityInView && <CountUp end={20} duration={2} className='text-6xl font-extrabold text-white' />}
+      <h2 className='text-2xl font-semibold text-white '>services</h2>
     </div>
     <div ref={staffRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-      {staffInView && <CountUp end={8} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
-      <h2 className='text-2xl font-semibold text-gray-700'>Staff</h2>
+      {staffInView && <CountUp end={8} duration={2} className='text-6xl font-extrabold text-white ' />}
+      <h2 className='text-2xl font-semibold text-white '>Staff</h2>
     </div>
     <div ref={experienceRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
-      {experienceInView && <CountUp end={5} duration={2} className='text-6xl font-extrabold text-yellow-600' />}
-      <h2 className='text-2xl font-semibold text-gray-700'>Experience</h2>
+      {experienceInView && <CountUp end={5} duration={2} className='text-6xl font-extrabold text-white ' />}
+      <h2 className='text-2xl font-semibold text-white '>Experience</h2>
     </div>
   </div>
 

@@ -72,6 +72,15 @@ function Classes ()  {
 
 
   return (
+    <>
+    <div className=' flex justify-center items-center flex-col min-h-[200px] p-8 space-y-3 text-center'>
+    <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-fredoka text-center'>
+    Explore Our Ongoing Classes!!!
+  </h1>
+  <p className='text-base  w-[500px] sm:text-lg md:text-xl text-center font-league-spartan'>
+  We help children to develop through play-based learning.
+  </p>
+    </div>
     <div className='min-h-[500px] '>
     <div className="py-12">
       <div className="container mx-auto px-4">
@@ -93,7 +102,7 @@ function Classes ()  {
             <SwiperSlide
               key={item.id}
               style={{ width: '250px' }}
-              className="bg-white p-4 rounded-lg shadow-lg"
+              className="bg-white p-4 rounded-lg shadow-lg border border-gray-200"
             >
               <img
                 src={item.image}
@@ -110,6 +119,7 @@ function Classes ()  {
     </div>
     </div>
     </div>
+    </>
   );
 };
 
