@@ -36,20 +36,20 @@ function Navbar() {
         <div className={`flex-col gap-5 space-y-4 sm:space-y-0 sm:flex-row sm:space-x-10 md:justify-center justify-start items-center sm:flex ${isOpen ? 'flex' : 'hidden'} sm:block sm:p-4 sm:col-span-7`}>
          
         <Link to="/">
-          <h3 className='text-lg font-bold font-mono'>Home</h3>
+          <h3 className='text-lg font-bold  font-fredoka'>Home</h3>
         </Link>
           <Link to='/about'>
-          <h3 className='text-lg font-bold font-mono'>About</h3>
+          <h3 className='text-lg font-bold  font-fredoka'>About</h3>
           </Link>
           <Link to='/events'>
-          <h3 className='text-lg font-bold font-mono'>Events</h3>
+          <h3 className='text-lg font-bold  font-fredoka'>Events</h3>
           </Link>
          <Link to='/gallery'>
-         <h3 className='text-lg font-bold font-mono'>Gallery</h3>
+         <h3 className='text-lg font-bold  font-fredoka'>Gallery</h3>
          </Link>
            
            <Link to='/contact'>
-           <h3 className='text-lg font-bold font-mono'>Contact</h3>
+           <h3 className='text-lg font-bold  font-fredoka'>Contact</h3>
            </Link>
           
 {/*           

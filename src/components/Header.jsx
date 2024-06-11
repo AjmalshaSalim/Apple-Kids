@@ -63,20 +63,20 @@ function Header() {
             alt="Illustration"
              />
              <div className=' flex flex-col sm:pb-10 pb-[100px] space-y-5 justify-center sm:items-start items-center '>
-          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold font-serif '>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold font-fredoka '>
             Little Minds <br /> Grow Here !!
           </h1>
-          <p className='text-base sm:text-lg md:text-xl text-center '>
+          <p className='text-base sm:text-lg md:text-xl text-center font-league-spartan '>
            Where every day is an adventure in learning!
           </p>
           <div className='flex space-x-4'>
             <Link to='/about'>
-            <button className='bg-[#E21D26] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg'>
+            <button className='bg-[#E21D26] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg font-fredoka'>
               About US
             </button>
             </Link>
            <Link to='/contact'>
-           <button className='  bg-white font-bold py-2 px-4 rounded-lg'>
+           <button className='  bg-white font-bold py-2 px-4 rounded-lg font-fredoka'>
               Contact US
             </button>
            </Link>

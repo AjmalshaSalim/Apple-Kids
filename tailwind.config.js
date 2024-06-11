@@ -8,8 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [ 'sans-serif'],
-        serif: ['Merriweather', 'serif'], 
+        'fredoka': ['Fredoka', 'sans-serif'],
+        'league-spartan': ['"League Spartan"', 'sans-serif'],
       },
       borderRadius: {
         'custom-top': '20px 150px 0 0', // Adjust the values as needed
