@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import aj22 from '../assets/images/aj22.png'
 
 const galleryItems = [
     {
@@ -31,13 +32,16 @@ const galleryItems = [
 function Homegallery() {
   return (
     <>
-    <div className='min-h-[400px] bg-pink-100 p-4'>
-        <div className='flex justify-center items-center p-3'>
-        <h1 className='sm:text-4xl text-xl md:text-2xl font-bold text-gray-800 tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-400'>
-    Explore Our Gallery
-  </h1>
-        </div>
-    <div className='min-h-[400px]  bg-no-repeat' >
+    <div className='min-h-[700px] p-4 bg-no-repeat bg-cover  ' style={{backgroundImage:`url(${aj22})`}}>
+
+    <div className='flex justify-center items-center p-6 flex-col gap-4 '>
+         <h1 className='text-2xl sm:text-3xl md:text-4xl  font-bold font-fredoka md:p-6 pt-24'>
+           Explore Our Gallery
+          </h1>
+        
+         </div>
+       
+    <div className=' ' >
    <div className=" py-12">
       <div className="container mx-auto px-4">
        
@@ -56,9 +60,9 @@ function Homegallery() {
       </div>
     </div>
     </div>
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center '>
         <Link to='/gallery'>
-        <button className='px-6 py-2 mt-4 text-white bg-pink-500 rounded-lg shadow-lg hover:bg-pink-800 focus:outline-none focus:ring-2 focus:ring-pink-300'>
+        <button className='px-6 py-2 mt-4 text-white bg-[#E21D26] hover:bg-red-700 rounded-lg shadow-lg  focus:outline-none focus:ring-2 '>
     See more 
   </button>
         </Link>
