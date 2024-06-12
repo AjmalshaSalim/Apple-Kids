@@ -114,8 +114,8 @@ function Classes ()  {
                 className="w-full h-64 object-cover rounded-lg"
                 loading="lazy"
               />
-              <h2 className="text-xl font-bold mt-4 h-16">{item.name}</h2>
-              <p className="text-gray-700 h-24">{item.description}</p>
+              <h2 className="text-xl font-bold mt-4 h-16 font-fredoka">{item.name}</h2>
+              <p className="text-gray-700 h-24 font-league-spartan">{item.description}</p>
             </SwiperSlide>
           ))}
       

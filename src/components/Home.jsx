@@ -17,12 +17,10 @@ function Home() {
   </button>
           </Link>
   
-  <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-serif text-center'>
+  <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-fredoka text-center'>
     A day full of discoveries<br />and knowledge!
   </h1>
-  {/* <p className='text-base sm:text-lg md:text-xl text-center  font-league-spartan'>
-     Explore Our Ongoing Classes!!!
-  </p> */}
+ 
 </div>
 
 
