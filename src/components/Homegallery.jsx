@@ -47,7 +47,7 @@ function Homegallery() {
        
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2  xl:grid-cols-4">
           {galleryItems.map((item) => (
-            <div key={item.id} className="bg-white p-4 rounded-lg shadow-lg">
+            <div key={item.id} className="bg-white p-4 rounded-lg shadow-lg  transform transition-transform duration-300 hover:scale-105">
               <img
                 src={item.image}
                 alt={item.alt}

@@ -10,7 +10,7 @@ function Homebot() {
  
   return (
  <>
- <div className=' min-h-[400px]   grid lg:grid-cols-2 p-4'>
+ <div className=' min-h-[400px]   grid lg:grid-cols-2 p-4 bg-[#FCF2D9]'>
  <div className='  flex flex-col justify-center mt-6 items-center gap-4' >
        <button className='bg-purple-400 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded-lg h-8  '>
                Our mission
@@ -28,10 +28,10 @@ function Homebot() {
           Stress-free, child-centered, holistic education
         </p>
        </div>
-
+{/* 
        <div className='flex lg:justify-start justify-center items-center  bg-no-repeat bg-right-bottom ' style={{backgroundImage:"url('https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg')"}}>
          <img className='h-80 rounded-lg' src='https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&cs=tinysrgb&w=600'  alt='apple kids image' />
-       </div>
+       </div> */}
  </div>
        
  

@@ -10,13 +10,13 @@ function Footer() {
 
 {/* second portion */}
 
-        <div className=' min-h-[600px]   flex flex-col  bg-no-repeat w-full bg-auto ' style={{ backgroundImage: `url(${bg})` }}
+        <div className=' min-h-[600px] bg-no-repeat bg-cover ' style={{ backgroundImage: `url(${bg})` }}
         >
             {/* <div className=' grid sm:grid-cols-5 mx-auto container gap-2 mt-6 space-y-2'> */}
 
 
      
-                {/* <div className='flex flex-col space-y-6 justify-start items-center '>
+                 {/* <div className='flex flex-col space-y-6 justify-start items-center '>
                 <h1 className="text-white text-4xl  font-serif italic">
         Lal Ninas
       </h1>
@@ -29,10 +29,10 @@ function Footer() {
                    <img width="30" height="30" src="https://img.icons8.com/bubbles/50/twitter-squared.png" alt="twitter-squared"/>
                    <img width="30" height="30" src="https://img.icons8.com/bubbles/50/youtube-play.png" alt="youtube-play"/>
                    </div>
-                </div> */}
+                </div> 
    
 
-                {/* <div className='flex flex-col space-y-6 justify-start items-center'>
+                 <div className='flex flex-col space-y-6 justify-start items-center'>
                 <h1 className="text-3xl md:text-2xl font-bold text-white">Pages</h1>
       <h3 className="text-lg md:text-md font-medium cursor-pointer text-white">Home</h3>
       <h3 className="text-lg md:text-md font-medium cursor-pointer text-white">About Us</h3>
@@ -79,11 +79,11 @@ function Footer() {
                 
                 </div>
 
-            </div> */}
+            </div>
 
-            {/* <div className='flex  sm:justify-start items-center justify-center sm:p-0 p-4 mx-auto container ' >
+            <div className='flex  sm:justify-start items-center justify-center sm:p-0 p-4 mx-auto container ' >
                <p className='text-white sm:text-lg text-md'>a2zalphabetsolutionz@2024 -- This is a Sample Website</p>
-            </div> */}
+            </div> */} 
         </div>
 
    
@@ -92,3 +92,4 @@ function Footer() {
 }
 
 export default Footer
+

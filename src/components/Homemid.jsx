@@ -19,15 +19,15 @@ function Homemid() {
   return (
     <>
    
-   <div className='min-h-[450px] grid grid-cols-1 lg:grid-cols-12 bg-gray-200 p-4'>
+   <div className='min-h-[450px] grid grid-cols-1 lg:grid-cols-12 bg-[#FCF2D9]  p-4'>
 
    {/* 1st div */}
-  <div className='flex justify-center items-center lg:col-span-4'>
+  {/* <div className='flex justify-center items-center lg:col-span-4'>
     <img className='w-72 h-96 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
-  </div>
+  </div> */}
 
   {/* 2nd div */}
-  <div className='flex justify-center lg:items-start items-center flex-col gap-6 lg:col-span-3 p-4'>
+  {/* <div className='flex justify-center lg:items-start items-center flex-col gap-6 lg:col-span-3 p-4'>
     <button className='bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg h-8'>
       why choose us?
     </button>
@@ -40,14 +40,14 @@ function Homemid() {
         {tab.title}
       </p>
     ))}
-  </div>
+  </div> */}
 
   {/* 3rd div */}
-  <div className='flex lg:justify-start justify-center items-center mt-4 ml-4 lg:col-span-5'>
+  {/* <div className='flex lg:justify-start justify-center items-center mt-4 ml-4 lg:col-span-5'>
     <p className='text-lg rounded-lg p-4 text-center w-full sm:w-96 border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300'>
       {selectedTab.description}
     </p>
-  </div>
+  </div> */}
 
 </div>
 
