@@ -77,13 +77,17 @@ function Classes ()  {
     <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-fredoka text-center'>
     Explore Our Ongoing Classes!!!
   </h1>
-  <p className='text-base  w-[500px] sm:text-lg md:text-xl text-center font-league-spartan'>
+  <p className=' text-sm w-[500px] sm:text-lg md:text-xl text-center font-league-spartan '>
   We help children to develop through play-based learning.
   </p>
     </div>
-    <div className='min-h-[700px] '>
+
+
+
+
+    <div className='min-h-[600px] '>
     <div className="py-12">
-      <div className="container mx-auto px-4 mb-6">
+      <div className="container mx-auto sm:px-10 px-4 ">
     <Swiper
       
       modules={[Navigation, A11y]}
