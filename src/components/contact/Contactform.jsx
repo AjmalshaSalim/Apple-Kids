@@ -18,14 +18,14 @@ function Contactform() {
                     <label className='font-fredoka'>first Name</label>
                    <input 
                             type='text'
-                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none  ' 
+                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
                     <div className='space-y-2'>
                     <label  className='font-fredoka'>last Name</label>
                     <input 
                             type='text'
-                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none  ' 
+                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0   ' 
                         />
                     </div>
                         
@@ -35,14 +35,14 @@ function Contactform() {
                     <label  className='font-fredoka'>phone</label>
                     <input 
                             type='text'
-                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none  ' 
+                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
                     <div className='space-y-2'>
                     <label  className='font-fredoka'>email</label>
                     <input 
                             type='text'
-                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none  ' 
+                            className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
                         
@@ -51,7 +51,7 @@ function Contactform() {
                     <div className='space-y-2'>
                         <label className='font-fredoka'>How can we help you?</label>
                     <textarea 
-                            className='w-full px-3 py-2 border-none rounded-lg shadow-sm h-32' 
+                            className='w-full px-3 py-2 border-none rounded-lg shadow-sm h-32 focus:ring-0 ' 
                         />
                     </div>
                     <div className=' flex mt-4 md:justify-start justify-center  '>

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Homemid() {
   const tabs = [
-    { title: 'Innovative Learning', description:"This approach to learning focuses on using new and creative methods to enhance the learning experience. It often involves the use of technology, interactive tools, and unconventional teaching methods to engage students and promote a deeper understanding of the subject matter." },
-    { title: 'Experienced Educators', description:"  Experienced educators are teachers or instructors who have a significant amount of teaching experience. They have spent years honing their craft and have a deep understanding of the subjects they teach. They are often sought after for their expertise and ability to effectively communicate complex ideas to students."},
-    { title: 'Interactive Learning', description: " Interactive learning is a teaching method that actively involves students in the learning process. It encourages students to participate, ask questions, and engage with the material in a meaningful way. This approach can improve retention and understanding by making learning more engaging and relevant to students' lives." },
-    { title: 'Cultural Diversity', description:" Cultural diversity refers to the presence of a variety of cultural groups within a society or organization. It encompasses differences in race, ethnicity, language, religion, and other cultural factors. Embracing cultural diversity promotes inclusivity, understanding, and respect for different perspectives and ways of life." },
+    { title: 'Innovative Learning', description:"This approach to learning focuses on using new and creative methods to enhance the learning experience. It often involves the use of technology, interactive tools, and unconventional teaching methodsr." },
+    { title: 'Experienced Educators', description:"  Experienced educators are teachers or instructors who have a significant amount of teaching experience. They have spent years honing their craft and have a deep understanding of the subjects they teach. ."},
+    { title: 'Interactive Learning', description: " Interactive learning is a teaching method that actively involves students in the learning process. It encourages students to participate, ask questions, and engage with the material in a meaningful way. ." },
+    { title: 'Cultural Diversity', description:" Cultural diversity refers to the presence of a variety of cultural groups within a society or organization. It encompasses differences in race, ethnicity, language, religion, and other cultural factors. " },
   ];
 
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
@@ -19,35 +20,40 @@ function Homemid() {
   return (
     <>
    
-   <div className='min-h-[450px] grid grid-cols-1 lg:grid-cols-12 bg-[#FCF2D9]  p-4'>
-
-   {/* 1st div */}
-  {/* <div className='flex justify-center items-center lg:col-span-4'>
-    <img className='w-72 h-96 rounded-tl-2xl rounded-br-3xl' src='https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600' />
-  </div> */}
+   <div className='min-h-[450px] grid sm:grid-cols-2   p-4'>
 
   {/* 2nd div */}
-  {/* <div className='flex justify-center lg:items-start items-center flex-col gap-6 lg:col-span-3 p-4'>
-    <button className='bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg h-8'>
-      why choose us?
-    </button>
+  <div className='flex justify-center  items-center flex-col gap-6  p-4'>
+      <button className='bg-[#38AD3D] text-white  text-[26px] font-bold py-4 px-6  h-[50px] w-[300px] font-fredoka text-center rounded-tl-[20px] rounded-br-[20px]  '>
+                  why choose us?
+                </button>  
     {tabs.map((tab, index) => (
+      <div   key={index} className={`flex border gap-6  rounded-full p-1  items-center space-x-8 w-96 cursor-pointer  ${selectedTab.title === tab.title ? 'bg-[#efe8d6] ' : ''}`} >
+        <div className='flex pl-4 w-2/3'>
       <p
-        key={index}
-        className={`text-lg border-2 border-t-4 border-l-4 border-pink-200 rounded-lg p-1 text-center w-72 cursor-pointer ${selectedTab.title === tab.title ? 'bg-pink-200' : ''}`}
+      
+        className={`text-lg `}
         onClick={() => handleTabClick(tab)}
       >
         {tab.title}
       </p>
+      </div>
+      <div >
+      <i className='fas fa-plus   text-white bg-[#F06D4F] p-1 rounded-md ' />
+      </div>
+      </div>
     ))}
-  </div> */}
+  </div>
 
   {/* 3rd div */}
-  {/* <div className='flex lg:justify-start justify-center items-center mt-4 ml-4 lg:col-span-5'>
-    <p className='text-lg rounded-lg p-4 text-center w-full sm:w-96 border border-gray-300 shadow-md hover:shadow-lg transition-shadow duration-300'>
+  <div className='lg:flex justify-start hidden items-center mt-4 ml-4 '>
+    <div className='flex justify-center items-center border border-r-4 border-b-4 border-[#F06D4F] shadow-md hover:shadow-lg transition-shadow duration-300 p-4 h-[350px] w-[300px] rounded-tl-[40px] rounded-br-[40px] rounded-tr-[20px] rounded-bl-[20px]'>
+    <p className='   text-center   '>
       {selectedTab.description}
     </p>
-  </div> */}
+    </div>
+   
+  </div>
 
 </div>
 

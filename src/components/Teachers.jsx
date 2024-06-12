@@ -32,7 +32,7 @@ const teachers = [
 function Teachers() {
   return (
     <>
-    <div className='min-h-[800px] p-6 '>
+    <div className='min-h-[500px] p-6 '>
          <div className='flex justify-center items-center p-6 flex-col gap-4'>
          <h1 className='text-2xl sm:text-3xl md:text-4xl  font-bold font-fredoka'>
             Meet Our Team
