@@ -81,9 +81,9 @@ function Classes ()  {
   We help children to develop through play-based learning.
   </p>
     </div>
-    <div className='min-h-[500px] '>
+    <div className='min-h-[700px] '>
     <div className="py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 mb-6">
     <Swiper
       
       modules={[Navigation, A11y]}
