@@ -1,6 +1,7 @@
 import React from 'react'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import Svg from './Svg';
 
 function Countup() {
     const { ref: facilityRef, inView: facilityInView } = useInView({
@@ -22,9 +23,14 @@ function Countup() {
   return (
     
     <>
-
-    
+<div>
+   <div className='mb-[-2px]'>
+   <Svg/>
+   </div>
+     
+   
     <div className='min-h-[200px] bg-[#F06D4F] grid sm:grid-cols-4 '>
+   
     <div ref={studentsRef} className='flex flex-col space-y-4 justify-center items-center m-4'>
       {studentsInView && <CountUp end={100} duration={2}  suffix="+" className='text-6xl font-extrabold text-white ' />} 
       
@@ -42,6 +48,7 @@ function Countup() {
       {experienceInView && <CountUp end={5} duration={2} className='text-6xl font-extrabold text-white ' />}
       <h2 className='text-2xl font-semibold text-white '>Experience</h2>
     </div>
+  </div>
   </div>
 
     </>
