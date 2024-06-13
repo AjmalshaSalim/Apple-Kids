@@ -1,5 +1,4 @@
 import React from 'react'
-import kid from '../../assets/images/KID.svg'
 import kinder from '../../assets/images/KINDER.svg'
 import bg from '../../assets/images/svg-element-7.svg'
 import pen from '../../assets/images/PEN.svg'
