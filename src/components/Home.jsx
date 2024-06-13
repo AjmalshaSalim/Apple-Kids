@@ -12,8 +12,8 @@ function Home() {
 
         <div className='min-h-[200px] flex flex-col justify-center items-center space-y-4 p-4 mt-4 mx-auto container'>
           <Link to='/contact' >
-          <button className='bg-[#379E3B] hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg h-8 w-[150px] font-fredoka'>
-   Apple Kids🍎
+          <button className='bg-[#379E3B] hover:bg-green-700 text-white font-bold pt-1 pb-2 px-4 rounded-lg h-8 w-[150px] font-fredoka'>
+   Apple Kids 🍎
   </button>
           </Link>
   

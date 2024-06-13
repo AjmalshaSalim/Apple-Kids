@@ -36,10 +36,10 @@ function Homecards() {
         <div className=' min-h-[400px] flex md:flex-row flex-col gap-10 justify-center items-center   flex-wrap p-6'>
 
       {cardData.map((card,index) =>  (
-        <div  key={index} className='bg-white border border-gray-300 rounded-lg w-52 h-64 p-4 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out  group'>
+        <div  key={index} className='bg-white border border-gray-300 rounded-lg w-52 h-64 p-6 hover:shadow-lg transition-shadow duration-300 ease-in-out  group'>
         <img width="48" height="48" src={card.imgSrc} alt={card.title} className='transition-transform duration-500 ease-in-out  group-hover:rotate-180' />
         <h3 className='text-lg font-semibold mb-2 mt-4 font-fredoka'>{card.title}</h3>
-        <p className='text-sm text-gray-700 font-league-spartan'>{card.description}</p>
+        <p className='text-md line-clamp-5 text-gray-700 font-league-spartan mt-3'>{card.description}</p>
       </div>
       ))}
         </div>

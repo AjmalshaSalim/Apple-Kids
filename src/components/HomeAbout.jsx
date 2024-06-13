@@ -26,13 +26,13 @@ function HomeAbout() {
 
 
         <div className='flex items-center lg:justify-start  justify-center bg-no-repeat bg-right-bottom' style={{backgroundImage:`url(${bg})`,backgroundSize:'600px 400px'}} >
+        <div className='sm:w-2/3  sm:h-80 w-64  rounded-3xl overflow-hidden'>
         <img
             src='https://images.pexels.com/photos/8363027/pexels-photo-8363027.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt='kids pic'
-            className=' sm:w-2/3  sm:h-80 w-64  rounded-3xl '
+            className=' rounded-3xl w-full'
         />
-        
-        
+        </div>
          </div>
 
 
