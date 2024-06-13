@@ -147,7 +147,7 @@ function Gallery() {
 
    {/* image section */}
 
-   <div className='flex justify-center items-center min-h-[100px] bg-pink-100'>
+   <div className='flex justify-center items-center min-h-[100px] '>
       <div className=' bg-pink-200 h-12 px-6 rounded-md flex justify-center items-center'>
         <ul className='flex flex-row space-x-6 gap-4' >
         <li
@@ -178,8 +178,9 @@ function Gallery() {
       </div>
     </div>
 
-   <div className='min-h-[400px] bg-pink-100 bg-no-repeat ' style={{backgroundImage:"url(https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg)",
+   <div className='min-h-[400px] bg-no-repeat ' style={{backgroundImage:"url(https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg)",
      backgroundPosition: 'right',
+     backgroundSize:'200px 200px'
    }}>
    <div className=" py-12">
       <div className="container mx-auto px-4">

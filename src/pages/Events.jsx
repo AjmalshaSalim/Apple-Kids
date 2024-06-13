@@ -85,15 +85,15 @@ function Events() {
 
          {/* Banner section */}
 
-         <div className='min-h-[250px] bg-gray-200 flex  flex-col gap-2 justify-center items-center bg-no-repeat' style={{backgroundImage:"url(https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg)"}}>
-            <p><Link to='/'>Home</Link>/Events </p>
-             <h1 className='sm:text-4xl text-xl font-bold font-mono'>News & Events</h1>
+         <div className='min-h-[250px] bg-[#FCF2D9] flex  flex-col gap-2 justify-center items-center bg-no-repeat' style={{backgroundImage:"url(https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg)"}}>
+            <p className=' font-league-spartan'><Link to='/'>Home</Link>/Events </p>
+             <h1 className='sm:text-4xl text-xl font-bold font-fredoka'>News & Events</h1>
          </div>
          
 
          {/* card section */}
 
-         <div className='min-h-[500px] bg-gray-100'>
+         <div className='min-h-[600px] '>
          <div className=" py-12">
   <div className="container mx-auto px-4">
     <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -129,15 +129,8 @@ function Events() {
         </div>
 
        {/* subscribeform */}
-        <div className='min-h-[100px] bg-purple-300 grid sm:grid-cols-12'>
-  <div className='sm:col-span-4 flex justify-center items-center'>
-    <h1 className='text-2xl text-white font-bold'>Subscribe to our newsletter</h1>
-  </div>
-  <div className='sm:col-span-8 flex justify-center items-center'>
-    <input className='px-12 py-4 border border-gray-400 rounded-lg outline-none focus:border-purple-500' placeholder='Enter your email...' id='mail' />
-    <button className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg m-4'>Subscribe</button>
-  </div>
-       </div>
+       
+      
 
 
     </>
