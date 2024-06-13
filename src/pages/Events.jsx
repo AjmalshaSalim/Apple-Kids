@@ -1,8 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
+import api from '../api/api.js'
+
 
 function Events() {
+  const[data,setData]=useState([])
+
+  const fetchEvents=async()=>{
+    try {
+     const response=await api.get('/event')
+
+     setData(response.data.event)
+     console.log(response.data.event)
+     console.log(data)   
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
@@ -55,6 +70,15 @@ function Events() {
       const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
       };
+
+
+
+      useEffect(()=>{
+        fetchEvents()
+        
+      },[])
+
+
   return (
     <>
          <Navbar/>

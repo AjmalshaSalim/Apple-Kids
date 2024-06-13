@@ -3,9 +3,11 @@ import React from 'react'
 function Card() {
   return (
     <>
-    <div className='min-h-[800px] flex justify-center items-center'>
-        <div className='bg-yellow-300 w-[800px] h-[500px] rounded-2xl flex overflow-hidden'>
-            <div className='bg-[#F06D4F] w-1/2 flex flex-col space-y-4 justify-center items-start p-6 '>
+    <div className='min-h-[700px] flex justify-center items-center'>
+        <div className=' w-[800px] h-[500px] rounded-2xl flex lg:flex-row  overflow-hidden'>
+           
+           
+            <div className='bg-[#F06D4F] lg:w-1/2 w-full flex flex-col space-y-4 justify-center items-start p-6 lg:m-0 m-4 lg:rounded-none rounded-2xl  '>
             <div>
                <p className='font-fredoka text-white'>The curriculum aims to</p>
                 <h1 className='font-fredoka text-white text-xl sm:text-2xl font-bold '>Develop skills relevant to the 21st century:</h1>
@@ -51,8 +53,11 @@ function Card() {
             
                
             </div>
-            <div className='bg-pink-800 w-1/2'>
-                 janna
+
+
+
+            <div className='bg-pink-800 w-1/2 lg:block hidden'>
+                <img src='https://images.pexels.com/photos/261895/pexels-photo-261895.jpeg?auto=compress&cs=tinysrgb&w=600' alt='kidabout' className='w-full h-full' />
             </div>
         </div>
     </div>
@@ -62,3 +67,7 @@ function Card() {
 }
 
 export default Card
+
+
+
+

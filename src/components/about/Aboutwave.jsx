@@ -24,6 +24,7 @@ function Aboutwave() {
       ></path>
     </svg>
     </>
+    
   )
 }
 
