@@ -20,11 +20,11 @@ function Homemid() {
   return (
     <>
    
-   <div className='min-h-[450px] grid sm:grid-cols-2   p-4'>
+   <div className='min-h-[450px] grid lg:grid-cols-2   p-4'>
 
   {/* 2nd div */}
-  <div className='flex justify-center  items-center flex-col gap-6  p-4'>
-      <button className='bg-[#38AD3D] text-white  text-[26px] font-bold py-4 px-6  h-[50px] w-[300px] font-fredoka text-center rounded-tl-[20px] rounded-br-[20px]  '>
+  <div className='flex justify-center lg:items-end items-center   flex-col gap-6  p-4'>
+      <button className='bg-[#38AD3D] text-white  text-[26px] font-bold py-4 px-6  h-[50px] w-[300px] font-fredoka text-center rounded-tl-[20px] rounded-br-[20px] lg:mr-10 '>
                   why choose us?
                 </button>  
     {tabs.map((tab, index) => (
