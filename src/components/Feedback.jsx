@@ -50,7 +50,7 @@ const testimonials = [
 function Feedback() {
    
   return (
-    <div className='min-h-[300px]'>
+    <div className='min-h-[400px]'>
   <div className="bg-gray-100 py-12">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 font-mono">what parents say</h2>

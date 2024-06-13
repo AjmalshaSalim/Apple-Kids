@@ -5,6 +5,7 @@ import Homecards from './Homecards'
 import HomeAbout from './HomeAbout'
 import { Link } from 'react-router-dom'
 
+
 function Home() {
   return (
     <div className='min-h-[600px] '>
@@ -26,6 +27,7 @@ function Home() {
 
 <Homecards/>
 <HomeAbout/>
+
 <Countup/>
   <Classes/>
   

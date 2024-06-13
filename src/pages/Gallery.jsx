@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
+import lines from '../assets/images/lines.svg'
+import group from '../assets/images/group-2.jpg'
+import bg from '../assets/images/svg-element-7.svg'
 
 const galleryItems = [
   {
@@ -99,25 +102,47 @@ function Gallery() {
     <Navbar/>
 
    {/* top section */}
-    <div className='min-h-[400px]  grid sm:grid-cols-2 mb-4 ' >
-        <div className='flex flex-col justify-center items-center gap-6 p-4 bg-no-repeat' style={{backgroundImage:"url(https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg)"}}>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-center'>
-                Gallery!
-            </h1>
-            <p className='text-base sm:text-lg md:text-xl text-center'>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eos recusandae, alias non consequatur aperiam. Amet, fugit! Explicabo, officia culpa. Reiciendis non eaque deserunt aliquid provident saepe neque veritatis doloremque!
-            </p>
-            
-        </div>
+    <div className='min-h-[400px]  grid sm:grid-cols-2  bg-[#FCF2D9] ' >
+    <div className='flex flex-col justify-center   items-center gap-6 sm:p-4 p-6  '>
+      <div className='flex gap-5'>
+        <img src={lines} alt='line' className='w-[60px] h-[60px] ' />
+      <h1 className='text-2xl sm:text-4xl md:text-5xl font-bold  font-fredoka  '>Gallery</h1>
+      </div>
+           
+                <p className='text-base sm:text-lg md:text-xl font-league-spartan w-[350px]  '>
+                Get the right mortgage to buy your new home — or refinance to take advantage of low rates or convert equity into cash. We've got the personal service to guide you along the way.
+              </p>
+            </div>
 
 
-        <div className='flex justify-center'>
+        <div className='flex justify-center items-center bg-no-repeat bg-right p-4' style={{backgroundImage:`url(${bg})`,
+      backgroundSize:'200px 200px'}}>
         <img
-            src='https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&w=600'
+            src={group}
             alt='kids pic'
             className=' sm:w-2/3  sm:h-80 w-64  rounded-tl-3xl rounded-br-3xl'
         />
          </div>
+    </div>
+    <div className='mt-[-10px]'>
+    <svg
+      id="wave"
+      className="transform rotate-180 transition duration-300"
+      viewBox="0 0 1440 190"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stopColor="#FCF2D9" offset="0%"></stop>
+          <stop stopColor="#FCF2D9" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style={{ transform: 'translate(0, 0px)', opacity: 1 }}
+        fill="url(#sw-gradient-0)"
+        d="M0,76L60,85.5C120,95,240,114,360,114C480,114,600,95,720,91.8C840,89,960,101,1080,107.7C1200,114,1320,114,1440,95C1560,76,1680,38,1800,41.2C1920,44,2040,89,2160,88.7C2280,89,2400,44,2520,38C2640,32,2760,63,2880,82.3C3000,101,3120,108,3240,101.3C3360,95,3480,76,3600,76C3720,76,3840,95,3960,88.7C4080,82,4200,51,4320,50.7C4440,51,4560,82,4680,82.3C4800,82,4920,51,5040,57C5160,63,5280,108,5400,114C5520,120,5640,89,5760,69.7C5880,51,6000,44,6120,38C6240,32,6360,25,6480,47.5C6600,70,6720,120,6840,129.8C6960,139,7080,108,7200,107.7C7320,108,7440,139,7560,145.7C7680,152,7800,133,7920,117.2C8040,101,8160,89,8280,69.7C8400,51,8520,25,8580,12.7L8640,0L8640,190L8580,190C8520,190,8400,190,8280,190C8160,190,8040,190,7920,190C7800,190,7680,190,7560,190C7440,190,7320,190,7200,190C7080,190,6960,190,6840,190C6720,190,6600,190,6480,190C6360,190,6240,190,6120,190C6000,190,5880,190,5760,190C5640,190,5520,190,5400,190C5280,190,5160,190,5040,190C4920,190,4800,190,4680,190C4560,190,4440,190,4320,190C4200,190,4080,190,3960,190C3840,190,3720,190,3600,190C3480,190,3360,190,3240,190C3120,190,3000,190,2880,190C2760,190,2640,190,2520,190C2400,190,2280,190,2160,190C2040,190,1920,190,1800,190C1680,190,1560,190,1440,190C1320,190,1200,190,1080,190C960,190,840,190,720,190C600,190,480,190,360,190C240,190,120,190,60,190L0,190Z"
+      ></path>
+    </svg>
     </div>
 
    {/* image section */}

@@ -8,6 +8,7 @@ import Desc from '../components/about/Desc'
 import Card from '../components/about/Card'
 
 
+
 function About() {
  
  
@@ -27,13 +28,13 @@ function About() {
 
 
     
-
+<Countup/>
 
       {/* feedback section */}
 
      <Feedback/>
 
-     <Countup/>
+   
 
 
 
