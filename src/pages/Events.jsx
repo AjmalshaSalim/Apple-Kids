@@ -114,14 +114,14 @@ function Events() {
     <button
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
-              className="mx-1 px-3 py-2 bg-gray-400 text-gray-700 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mx-1 px-3 py-2 bg-[#E21D26] text-white font-fredoka rounded disabled:opacity-50 disabled:cursor-not-allowed  disabled:bg-gray-200 disabled:text-black"
             >
               Previous
             </button>
     <button
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="mx-1 px-3 py-2 bg-gray-400 text-gray-700 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mx-1 px-3 py-2 bg-[#E21D26] text-white font-fredoka rounded disabled:opacity-50 disabled:cursor-not-allowed  disabled:bg-gray-200 disabled:text-black"
             >
               Next
             </button>
