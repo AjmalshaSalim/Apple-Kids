@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {  A11y,Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import api from '../api/api';
 
 
 
@@ -48,6 +49,14 @@ const testimonials = [
 ];
 
 function Feedback() {
+
+  useEffect(()=>{
+    const fetchTestimonial=async()=>{
+         const response=await api.get('/testimonials')
+         console.log(response)
+    }
+    fetchTestimonial()
+  },[])
    
   return (
     <div className='min-h-[300px]'>

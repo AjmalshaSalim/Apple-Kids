@@ -5,20 +5,32 @@ import api from '../api/api.js'
 
 
 function Events() {
+
+
+
+
   const[data,setData]=useState([])
 
-  const fetchEvents=async()=>{
-    try {
-     const response=await api.get('/event')
+  
 
-     setData(response.data.event)
-     console.log(response.data.event)
-     console.log(data)   
-    } catch (error) {
-      console.log(error)
+  useEffect(()=>{
+    const fetchEvents=async()=>{
+      try {
+       const response=await api.get('/event')
+  
+       setData(response.data.event)
+       console.log(response.data.event)
+        
+      } catch (error) {
+        console.log(error)
+      }
     }
-  }
+  
+    fetchEvents()
+    
+  },[])
 
+  
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
@@ -72,11 +84,6 @@ function Events() {
       };
 
 
-
-      useEffect(()=>{
-        fetchEvents()
-        
-      },[])
 
 
   return (

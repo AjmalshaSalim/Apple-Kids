@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import lines from '../assets/images/lines.svg'
 import group from '../assets/images/group-2.jpg'
 import bg from '../assets/images/svg-element-7.svg'
+import api from '../api/api'
 
 const galleryItems = [
   {
@@ -81,6 +82,18 @@ const galleryItems = [
 ];
 
 function Gallery() {
+
+  useEffect(()=>{
+    const fetchGallery=async()=>{
+      const response=await api.get('/gallery')
+      console.log(response)
+ }
+ fetchGallery()
+ 
+  },[])
+
+
+
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -151,25 +164,25 @@ function Gallery() {
       <div className=' bg-[#F06D4F] h-12 px-6 rounded-md flex justify-center items-center'>
         <ul className='flex flex-row space-x-6 gap-4' >
         <li
-              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'all' ? 'text-black' : ''}`}
+              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'all' ? 'text-gray-950' : ''}`}
               onClick={() => setFilter('all')}
             >
               All
             </li>
             <li
-              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'office' ? 'text-black' : ''}`}
+              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'office' ? 'text-gray-950' : ''}`}
               onClick={() => setFilter('office')}
             >
               Office
             </li>
             <li
-              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'playing' ? 'text-black' : ''}`}
+              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'playing' ? 'text-gray-950' : ''}`}
               onClick={() => setFilter('playing')}
             >
               Playing
             </li>
             <li
-              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'sitting' ? 'text-black' : ''}`}
+              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'sitting' ? 'text-gray-950' : ''}`}
               onClick={() => setFilter('sitting')}
             >
               Sitting
