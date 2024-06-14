@@ -37,7 +37,7 @@ function Teachers() {
          <h1 className='text-2xl sm:text-3xl md:text-4xl  font-bold font-fredoka'>
             Meet Our Team
           </h1>
-          <p className='text-base  w-[500px] sm:text-lg md:text-xl text-center font-league-spartan'>
+          <p className='text-base sm:w-[500px] w-[300px] sm:text-lg md:text-xl text-center font-league-spartan'>
           Now is the time to invest in your child's education
   </p>
          </div>

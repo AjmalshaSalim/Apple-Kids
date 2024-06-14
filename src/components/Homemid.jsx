@@ -28,7 +28,7 @@ function Homemid() {
                   why choose us?
                 </button>  
     {tabs.map((tab, index) => (
-      <div   key={index} className={`flex border gap-6  rounded-full p-1  items-center space-x-8 w-96 cursor-pointer  ${selectedTab.title === tab.title ? 'bg-[#efe8d6] ' : ''}`} >
+      <div   key={index} className={`flex border gap-6  rounded-full p-1  items-center space-x-8 sm:w-96 w-80 cursor-pointer  ${selectedTab.title === tab.title ? 'bg-[#efe8d6] ' : ''}`} >
         <div className='flex pl-4 w-2/3'>
       <p
       

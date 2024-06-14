@@ -73,11 +73,11 @@ function Classes ()  {
 
   return (
     <>
-    <div className=' flex justify-center items-center flex-col min-h-[200px] p-8 space-y-3 text-center'>
-    <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-fredoka text-center'>
+    <div className=' flex justify-center items-center flex-col min-h-[200px] p-8 space-y-3 text-center '>
+    <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-fredoka text-center '>
     Explore Our Ongoing Classes!!!
   </h1>
-  <p className=' text-sm w-[500px] sm:text-lg md:text-xl text-center font-league-spartan '>
+  <p className=' text-sm sm:w-[500px] w-[300px] sm:text-lg md:text-xl text-center font-league-spartan  '>
   We help children to develop through play-based learning.
   </p>
     </div>
@@ -85,13 +85,13 @@ function Classes ()  {
 
 
 
-    <div className='min-h-[600px] '>
-    <div className="py-12">
-      <div className="container mx-auto sm:px-10 px-4 ">
+    <div className='min-h-[600px]  '>
+    <div className="py-12 ">
+      <div className="container mx-auto sm:px-10  px-4">
     <Swiper
       
       modules={[Navigation, A11y]}
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView={3}
       navigation
       breakpoints={{
@@ -105,8 +105,8 @@ function Classes ()  {
        {ongoingClasses.map((item) => (
             <SwiperSlide
               key={item.id}
-              style={{ width: '250px' }}
-              className="bg-white p-4 rounded-lg shadow-lg border border-gray-200"
+              
+              className="bg-white p-4 rounded-lg shadow-lg border border-gray-200 sm:w-[250px] w-[200px]"
             >
               <img
                 src={item.image}

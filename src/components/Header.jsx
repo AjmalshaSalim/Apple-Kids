@@ -21,8 +21,7 @@ function Header() {
       <div className='w-auto min-h-[700px] bg-[#FCF2D9] grid sm:grid-cols-2'>
 
 
-
-        <div className=' relative  z-10 overflow-hidden '>
+ <div className=' relative  z-10 overflow-hidden  '>
           <div>
             <img 
                decoding="async"
@@ -50,9 +49,9 @@ function Header() {
             
           </div>
           
-        </div>
+        </div> 
         
-        <div className='flex flex-col sm:justify-center sm:items-start   items-center justify-start space-y-6 p-4 bg-no-repeat animate-bg relative '  style={{backgroundImage:`url(${homeMainImage})` ,
+        <div className='flex flex-col sm:justify-center sm:items-start   items-center justify-start space-y-6 p-4 bg-no-repeat animate-bg relative  '  style={{backgroundImage:`url(${homeMainImage})` ,
           backgroundPosition:  ' right bottom',  
           
           }}>
@@ -86,7 +85,7 @@ function Header() {
           </div>
          
         </div>
-        
+      
 
       </div>
 

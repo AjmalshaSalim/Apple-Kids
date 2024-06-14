@@ -31,9 +31,9 @@ function Homecards() {
 
   return (
   
-        
-        //  card section 
-        <div className=' min-h-[400px] flex md:flex-row flex-col gap-10 justify-center items-center   flex-wrap p-6'>
+        <>
+       
+         <div className=' min-h-[400px] flex md:flex-row flex-col gap-10 justify-center items-center   flex-wrap p-6'>
 
       {cardData.map((card,index) =>  (
         <div  key={index} className='bg-white border border-gray-300 rounded-lg w-52 h-64 p-4 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out  group'>
@@ -42,9 +42,9 @@ function Homecards() {
         <p className='text-sm text-gray-700 font-league-spartan'>{card.description}</p>
       </div>
       ))}
-        </div>
+        </div> 
  
-   
+   </>
   )
 }
 
