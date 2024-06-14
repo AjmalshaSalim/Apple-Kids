@@ -4,6 +4,7 @@ import Countup from './Countup'
 import Homecards from './Homecards'
 import HomeAbout from './HomeAbout'
 import { Link } from 'react-router-dom'
+import Svg from './Svg'
 
 
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
 
 <Homecards/>
 <HomeAbout/>
-
+<Svg/>
 <Countup/>
   <Classes/>
   

@@ -6,6 +6,7 @@ import Banner from '../components/about/Banner'
 import Imagesection from '../components/about/Imagesection'
 import Desc from '../components/about/Desc'
 import Card from '../components/about/Card'
+import Aboutsvg from '../components/about/Aboutsvg'
 
 
 
@@ -27,7 +28,6 @@ function About() {
        
 
 
-    
 <Countup/>
 
       {/* feedback section */}

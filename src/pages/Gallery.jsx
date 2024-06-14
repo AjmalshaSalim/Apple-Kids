@@ -109,7 +109,7 @@ function Gallery() {
       <h1 className='text-2xl sm:text-4xl md:text-5xl font-bold  font-fredoka  '>Gallery</h1>
       </div>
            
-                <p className='text-base sm:text-lg md:text-xl font-league-spartan w-[350px]  '>
+                <p className='text-base sm:text-lg md:text-xl font-league-spartan sm:w-[350px] w-[300px]  '>
                 Get the right mortgage to buy your new home — or refinance to take advantage of low rates or convert equity into cash. We've got the personal service to guide you along the way.
               </p>
             </div>
@@ -148,28 +148,28 @@ function Gallery() {
    {/* image section */}
 
    <div className='flex justify-center items-center min-h-[100px] '>
-      <div className=' bg-pink-200 h-12 px-6 rounded-md flex justify-center items-center'>
+      <div className=' bg-[#F06D4F] h-12 px-6 rounded-md flex justify-center items-center'>
         <ul className='flex flex-row space-x-6 gap-4' >
         <li
-              className={`text-yellow-600 font-sans text-xl hover:bg-yellow-200 cursor-pointer ${filter === 'all' ? 'bg-yellow-200' : ''}`}
+              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'all' ? 'text-black' : ''}`}
               onClick={() => setFilter('all')}
             >
               All
             </li>
             <li
-              className={`text-yellow-600 font-sans text-xl hover:bg-yellow-200 cursor-pointer ${filter === 'office' ? 'bg-yellow-200' : ''}`}
+              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'office' ? 'text-black' : ''}`}
               onClick={() => setFilter('office')}
             >
               Office
             </li>
             <li
-              className={`text-yellow-600 font-sans text-xl hover:bg-yellow-200 cursor-pointer ${filter === 'playing' ? 'bg-yellow-200' : ''}`}
+              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'playing' ? 'text-black' : ''}`}
               onClick={() => setFilter('playing')}
             >
               Playing
             </li>
             <li
-              className={`text-yellow-600 font-sans text-xl hover:bg-yellow-200 cursor-pointer ${filter === 'sitting' ? 'bg-yellow-200' : ''}`}
+              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'sitting' ? 'text-black' : ''}`}
               onClick={() => setFilter('sitting')}
             >
               Sitting
@@ -203,14 +203,14 @@ function Gallery() {
     <button
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage === 1}
-              className="mx-1 px-3 py-2 bg-gray-400 text-gray-700 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mx-1 px-3 py-2 bg-[#E21D26] text-white font-fredoka rounded disabled:opacity-50 disabled:cursor-not-allowed  disabled:bg-gray-200 disabled:text-black"
             >
               Previous
             </button>
     <button
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="mx-1 px-3 py-2 bg-gray-400 text-gray-700 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+              className="mx-1 px-3 py-2 bg-[#E21D26] text-white rounded font-fredoka disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:text-black"
             >
               Next
             </button>

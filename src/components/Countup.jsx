@@ -25,9 +25,7 @@ function Countup() {
     <>
 <div>
   
-<div className='mb-[-2px]'>
-  <Svg/>
-  </div>
+
      
    
     <div className='min-h-[200px] bg-[#F06D4F] grid sm:grid-cols-4 '>
