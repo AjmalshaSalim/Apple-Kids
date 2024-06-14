@@ -50,10 +50,10 @@ const testimonials = [
 function Feedback() {
    
   return (
-    <div className='min-h-[400px]'>
-  <div className="bg-gray-100 py-12">
+    <div className='min-h-[300px]'>
+  <div className=" py-12">
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 font-mono">what parents say</h2>
+      <h2 className="text-4xl font-bold text-center  mb-8 font-fredoka">what parents say</h2>
       <Swiper
         modules={[ A11y,Autoplay]}
         autoplay={{delay: 2000}}
@@ -62,14 +62,14 @@ function Feedback() {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
         breakpoints={{
-          1024: { slidesPerView: 3 },
+          1024: { slidesPerView: 2 },
           768: { slidesPerView: 2 },
           360: { slidesPerView: 1 },
         }}
       >
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
-            <div className="bg-white p-6 rounded-lg border-2 border-red-300 border-t-red-300 border-l-red-700 shadow-lg flex flex-col justify-between hover:shadow-lg transform hover:-translate-y-1 transition duration-300">
+            <div className="bg-white p-6 rounded-lg border-2  shadow-lg flex flex-col justify-between hover:shadow-lg transform hover:-translate-y-1 transition duration-300">
               <div className="flex items-center mb-4">
                 <img
                   src={testimonial.image}
