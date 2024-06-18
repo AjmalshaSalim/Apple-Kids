@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import api from '../../api/api'
 
 function Contactform() {
 
@@ -21,14 +22,15 @@ function Contactform() {
       };
 
       
-      const handleSubmit=(e)=>{
+      const handleSubmit=async(e)=>{
           e.preventDefault();
 
           if(!formData.name || !formData.phone || ! formData.email || !formData.message){
             setErrorMsg('All fields are required *')
           }
 
-          console.log('formdata:' ,formData)
+          const response=await api.post('/create',formData)
+          console.log(response)
       }
 
 
@@ -72,7 +74,7 @@ function Contactform() {
                     <div className='space-y-2'>
                     <label  className='font-fredoka'>phone</label>
                     <input 
-                           type='text'
+                           type='number'
                            name='phone'
                            value={formData.phone}
                            onChange={handleChange}
@@ -82,7 +84,7 @@ function Contactform() {
                     <div className='space-y-2'>
                     <label  className='font-fredoka'>email</label>
                     <input 
-                            type='text'
+                            type='email'
                             name='email'
                             value={formData.email}
                             onChange={handleChange}
@@ -98,6 +100,7 @@ function Contactform() {
                     <div className='space-y-2'>
                         <label className='font-fredoka'>How can we help you?</label>
                     <textarea 
+                            type='text'
                             name='message'
                             value={formData.message}
                             onChange={handleChange}
