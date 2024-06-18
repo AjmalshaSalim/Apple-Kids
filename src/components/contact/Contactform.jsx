@@ -13,21 +13,24 @@ function Contactform() {
                         Get in touch!
                        </h1>
                   </div>
-                   <div className='flex gap-6'>
-                    <div className='space-y-2'>
-                    <label className='font-fredoka'>first Name</label>
+
+
+
+                   <div className='2xl:w-[520px] w-full '>
+                    <div className='space-y-2 '>
+                    <label className='font-fredoka'> Name</label>
                    <input 
                             type='text'
                             className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
-                    <div className='space-y-2'>
+                    {/* <div className='space-y-2'>
                     <label  className='font-fredoka'>last Name</label>
                     <input 
                             type='text'
                             className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0   ' 
                         />
-                    </div>
+                    </div> */}
                         
                    </div>
                    <div className='flex gap-6'>
@@ -47,7 +50,10 @@ function Contactform() {
                     </div>
                         
                    </div>
-                   <div className='w-full'>
+
+
+
+                   <div className='2xl:w-[520px] w-full '>
                     <div className='space-y-2'>
                         <label className='font-fredoka'>How can we help you?</label>
                     <textarea 
@@ -61,7 +67,14 @@ function Contactform() {
                     </div>
                    
                    </div>
+
+
             </div>
+
+
+
+
+
 
             <div className='md:flex items-center md:justify-start  hidden p-6 bg-no-repeat' style={{backgroundImage:'URL("https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg")',
                backgroundPosition:  ' right bottom',
