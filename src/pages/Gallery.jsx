@@ -5,89 +5,95 @@ import group from '../assets/images/group-2.jpg'
 import bg from '../assets/images/svg-element-7.svg'
 import api from '../api/api'
 
-const galleryItems = [
-  {
-    id: 1,
-    image: 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600',
-    alt: 'Gallery Image 1',
-    category: 'office'
-  },
-  {
-    id: 2,
-    image: 'https://images.pexels.com/photos/273062/pexels-photo-273062.jpeg?auto=compress&cs=tinysrgb&w=600',
-    alt: 'Gallery Image 2',
-    category: 'playing'
-  },
-  {
-    id: 3,
-    image: 'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg?auto=compress&cs=tinysrgb&w=600',
-    alt: 'Gallery Image 3',
-    category: 'sitting'
-  },
-  {
-    id: 4,
-    image: 'https://images.pexels.com/photos/1154180/pexels-photo-1154180.jpeg?auto=compress&cs=tinysrgb&w=600',
-    alt: 'Gallery Image 4',
-    category: 'office'
-  },
-  {
-      id: 5,
-      image: 'https://images.pexels.com/photos/3087286/pexels-photo-3087286.jpeg?auto=compress&cs=tinysrgb&w=600',
-      alt: 'Gallery Image 3',
-      category: 'playing'
-    },
-    {
-      id: 6,
-      image: 'https://images.pexels.com/photos/8363769/pexels-photo-8363769.jpeg?auto=compress&cs=tinysrgb&w=600',
-      alt: 'Gallery Image 4',
-      category: 'office'
-    },
-    {
-      id: 7,
-      image: 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600',
-      alt: 'Gallery Image 1',
-      category: 'office'
-    },
-    {
-      id: 8,
-      image: 'https://images.pexels.com/photos/273062/pexels-photo-273062.jpeg?auto=compress&cs=tinysrgb&w=600',
-      alt: 'Gallery Image 2',
-      category: 'playing'
-    },
-    {
-      id: 9,
-      image: 'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg?auto=compress&cs=tinysrgb&w=600',
-      alt: 'Gallery Image 3',
-      category: 'sitting'
-    },
-    {
-      id: 10,
-      image: 'https://images.pexels.com/photos/1154180/pexels-photo-1154180.jpeg?auto=compress&cs=tinysrgb&w=600',
-      alt: 'Gallery Image 4',
-      category: 'office'
-    },
-    {
-        id: 11,
-        image: 'https://images.pexels.com/photos/3087286/pexels-photo-3087286.jpeg?auto=compress&cs=tinysrgb&w=600',
-        alt: 'Gallery Image 3',
-        category: 'playing'
-      },
-      {
-        id: 12,
-        image: 'https://images.pexels.com/photos/8363769/pexels-photo-8363769.jpeg?auto=compress&cs=tinysrgb&w=600',
-        alt: 'Gallery Image 4',
-        category: 'office'
-      },
-  // Add more gallery items as needed
-];
+// const galleryItems = [
+//   {
+//     id: 1,
+//     image: 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600',
+//     alt: 'Gallery Image 1',
+//     category: 'office'
+//   },
+//   {
+//     id: 2,
+//     image: 'https://images.pexels.com/photos/273062/pexels-photo-273062.jpeg?auto=compress&cs=tinysrgb&w=600',
+//     alt: 'Gallery Image 2',
+//     category: 'playing'
+//   },
+//   {
+//     id: 3,
+//     image: 'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg?auto=compress&cs=tinysrgb&w=600',
+//     alt: 'Gallery Image 3',
+//     category: 'sitting'
+//   },
+//   {
+//     id: 4,
+//     image: 'https://images.pexels.com/photos/1154180/pexels-photo-1154180.jpeg?auto=compress&cs=tinysrgb&w=600',
+//     alt: 'Gallery Image 4',
+//     category: 'office'
+//   },
+//   {
+//       id: 5,
+//       image: 'https://images.pexels.com/photos/3087286/pexels-photo-3087286.jpeg?auto=compress&cs=tinysrgb&w=600',
+//       alt: 'Gallery Image 3',
+//       category: 'playing'
+//     },
+//     {
+//       id: 6,
+//       image: 'https://images.pexels.com/photos/8363769/pexels-photo-8363769.jpeg?auto=compress&cs=tinysrgb&w=600',
+//       alt: 'Gallery Image 4',
+//       category: 'office'
+//     },
+//     {
+//       id: 7,
+//       image: 'https://images.pexels.com/photos/296302/pexels-photo-296302.jpeg?auto=compress&cs=tinysrgb&w=600',
+//       alt: 'Gallery Image 1',
+//       category: 'office'
+//     },
+//     {
+//       id: 8,
+//       image: 'https://images.pexels.com/photos/273062/pexels-photo-273062.jpeg?auto=compress&cs=tinysrgb&w=600',
+//       alt: 'Gallery Image 2',
+//       category: 'playing'
+//     },
+//     {
+//       id: 9,
+//       image: 'https://images.pexels.com/photos/2406271/pexels-photo-2406271.jpeg?auto=compress&cs=tinysrgb&w=600',
+//       alt: 'Gallery Image 3',
+//       category: 'sitting'
+//     },
+//     {
+//       id: 10,
+//       image: 'https://images.pexels.com/photos/1154180/pexels-photo-1154180.jpeg?auto=compress&cs=tinysrgb&w=600',
+//       alt: 'Gallery Image 4',
+//       category: 'office'
+//     },
+//     {
+//         id: 11,
+//         image: 'https://images.pexels.com/photos/3087286/pexels-photo-3087286.jpeg?auto=compress&cs=tinysrgb&w=600',
+//         alt: 'Gallery Image 3',
+//         category: 'playing'
+//       },
+//       {
+//         id: 12,
+//         image: 'https://images.pexels.com/photos/8363769/pexels-photo-8363769.jpeg?auto=compress&cs=tinysrgb&w=600',
+//         alt: 'Gallery Image 4',
+//         category: 'office'
+//       },
+//   // Add more gallery items as needed
+// ];
 
 function Gallery() {
   const[data,setData]=useState([])
 
   useEffect(()=>{
     const fetchGallery=async()=>{
-      const response=await api.get('/gallery')
-      console.log(response)
+      
+      try {
+        const response=await api.get('/gallery')
+        console.log(response.data.photos)
+        setData(response.data.photos)
+      } catch (error) {
+        console.log(error)
+      }
  }
  fetchGallery()
  
@@ -104,13 +110,9 @@ function Gallery() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
-   
-   const [filter, setFilter] = useState('all');
-
-   const filteredItems = filter === 'all' ? galleryItems : galleryItems.filter(item => item.category === filter);
-
-   const currentItems = filteredItems.slice(indexOfFirstItem, indexOfLastItem);
-   const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+ 
+   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+   const totalPages = Math.ceil(data.length / itemsPerPage);
   return (
     <>
     <Navbar/>
@@ -161,7 +163,7 @@ function Gallery() {
 
    {/* image section */}
 
-   <div className='flex justify-center items-center min-h-[100px] '>
+   {/* <div className='flex justify-center items-center min-h-[100px] '>
       <div className=' bg-[#F06D4F] h-12 px-6 rounded-md flex justify-center items-center'>
         <ul className='flex flex-row space-x-6 gap-4' >
         <li
@@ -190,7 +192,7 @@ function Gallery() {
             </li>
          </ul>
       </div>
-    </div>
+    </div> */}
 
    <div className='min-h-[400px] bg-no-repeat ' style={{backgroundImage:"url(https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/svg-element-1.svg)",
      backgroundPosition: 'right',
