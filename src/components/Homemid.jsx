@@ -20,11 +20,11 @@ function Homemid() {
   return (
     <>
    
-   <div className='min-h-[450px] grid lg:grid-cols-2   p-4'>
+   <div className='min-h-[450px] grid lg:grid-cols-2   lg:p-4 '>
 
   {/* 2nd div */}
   <div className='flex justify-center lg:items-end items-center   flex-col gap-6  p-4'>
-      <button className='bg-[#38AD3D] text-white  text-[26px] font-bold py-4 px-6  h-[50px] w-[300px] font-fredoka text-center rounded-tl-[20px] rounded-br-[20px] lg:mr-10 '>
+      <button className='bg-[#38AD3D] text-white flex justify-center items-center  text-[26px] font-bold py-4 px-6  h-[50px] w-[300px] font-fredoka text-center rounded-tl-[20px] rounded-br-[20px] lg:mr-10 '>
                   why choose us?
                 </button>  
     {tabs.map((tab, index) => (
@@ -45,8 +45,15 @@ function Homemid() {
     ))}
   </div>
 
+
+
+
+
+
+
+
   {/* 3rd div */}
-  <div className='lg:flex justify-start hidden items-center mt-4 ml-4 '>
+  <div className='flex lg:justify-start justify-center  items-center mt-4 ml-4  lg:mb-0 mb-6 p-4 '>
     <div className='flex justify-center items-center border border-r-4 border-b-4 border-[#F06D4F] shadow-md hover:shadow-lg transition-shadow duration-300 p-4 h-[350px] w-[300px] rounded-tl-[40px] rounded-br-[40px] rounded-tr-[20px] rounded-bl-[20px]'>
     <p className='   text-center   '>
       {selectedTab.description}

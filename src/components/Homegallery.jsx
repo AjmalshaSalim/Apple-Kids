@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import aj22 from '../assets/images/aj22.png'
+import api from '../api/api'
 
 const galleryItems = [
     {
@@ -30,6 +31,16 @@ const galleryItems = [
 ]
 
 function Homegallery() {
+  const[data,setData]=useState()
+  useEffect(()=>{
+     const fetchImage=async()=>{
+          const response=await api.get('/gallery')
+          const res=response.data.gallery
+          const resImg=res.slice(0,4)
+          setData(resImg)
+     }
+     fetchImage()
+  },[])
   return (
     <>
     <div className='min-h-[700px] p-4 bg-no-repeat bg-cover  ' style={{backgroundImage:`url(${aj22})`}}>

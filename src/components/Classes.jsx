@@ -73,7 +73,7 @@ function Classes ()  {
 
   return (
     <>
-    <div className=' flex justify-center items-center flex-col min-h-[200px] p-8 space-y-3 text-center '>
+    <div className=' flex justify-center items-center flex-col min-h-[200px] p-8 space-y-3 text-center  '>
     <h1 className='text-2xl sm:text-5xl md:text-4xl font-bold font-fredoka text-center '>
     Explore Our Ongoing Classes!!!
   </h1>
@@ -85,7 +85,7 @@ function Classes ()  {
 
 
 
-    <div className='min-h-[600px]  '>
+    <div className='min-h-[550px]   '>
     <div className="py-12 ">
       <div className="container mx-auto sm:px-10  px-4">
     <Swiper

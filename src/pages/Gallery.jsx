@@ -82,6 +82,7 @@ const galleryItems = [
 ];
 
 function Gallery() {
+  const[data,setData]=useState([])
 
   useEffect(()=>{
     const fetchGallery=async()=>{

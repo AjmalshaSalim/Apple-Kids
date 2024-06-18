@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import {  A11y,Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -49,10 +49,12 @@ const testimonials = [
 ];
 
 function Feedback() {
+  const[testimonials,setTestimonials]=useState([])
 
   useEffect(()=>{
     const fetchTestimonial=async()=>{
          const response=await api.get('/testimonials')
+         setTestimonials(response.data.testimonials)
          console.log(response)
     }
     fetchTestimonial()
