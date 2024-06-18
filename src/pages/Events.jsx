@@ -6,13 +6,9 @@ import api from '../api/api.js'
 
 function Events() {
 
-
-
-
   const[data,setData]=useState([])
 
   
-
   useEffect(()=>{
     const fetchEvents=async()=>{
       try {
@@ -37,47 +33,47 @@ function Events() {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
-    const newsItems = [
-        {
-          id: 1,
-          image: 'https://images.pexels.com/photos/261895/pexels-photo-261895.jpeg?auto=compress&cs=tinysrgb&w=600',
-          title: 'Event Title 1',
-          date: 'May 30, 2024',
-          description: 'This is a short description of the event. Learn more about what happened and key highlights.'
-        },
-        {
-          id: 2,
-          image: 'https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=600',
-          title: 'Event Title 2',
-          date: 'June 1, 2024',
-          description: 'This is another short description of the event. Discover the details and important moments.'
-        },
-        {
-            id: 3,
-            image: 'https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&w=600',
-            title: 'Event Title 2',
-            date: 'June 1, 2024',
-            description: 'This is another short description of the event. Discover the details and important moments.'
-          },
-          {
-            id: 4,
-            image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600',
-            title: 'Event Title 2',
-            date: 'June 1, 2024',
-            description: 'This is another short description of the event. Discover the details and important moments.'
-          },
-          {
-            id: 5,
-            image: 'https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg?auto=compress&cs=tinysrgb&w=600',
-            title: 'Event Title 2',
-            date: 'June 1, 2024',
-            description: 'This is another short description of the event. Discover the details and important moments.'
-          },
-        // Add more news items as needed
-      ];
+    // const newsItems = [
+    //     {
+    //       id: 1,
+    //       image: 'https://images.pexels.com/photos/261895/pexels-photo-261895.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //       title: 'Event Title 1',
+    //       date: 'May 30, 2024',
+    //       description: 'This is a short description of the event. Learn more about what happened and key highlights.'
+    //     },
+    //     {
+    //       id: 2,
+    //       image: 'https://images.pexels.com/photos/764681/pexels-photo-764681.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //       title: 'Event Title 2',
+    //       date: 'June 1, 2024',
+    //       description: 'This is another short description of the event. Discover the details and important moments.'
+    //     },
+    //     {
+    //         id: 3,
+    //         image: 'https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //         title: 'Event Title 2',
+    //         date: 'June 1, 2024',
+    //         description: 'This is another short description of the event. Discover the details and important moments.'
+    //       },
+    //       {
+    //         id: 4,
+    //         image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //         title: 'Event Title 2',
+    //         date: 'June 1, 2024',
+    //         description: 'This is another short description of the event. Discover the details and important moments.'
+    //       },
+    //       {
+    //         id: 5,
+    //         image: 'https://images.pexels.com/photos/4019754/pexels-photo-4019754.jpeg?auto=compress&cs=tinysrgb&w=600',
+    //         title: 'Event Title 2',
+    //         date: 'June 1, 2024',
+    //         description: 'This is another short description of the event. Discover the details and important moments.'
+    //       },
+    //     // Add more news items as needed
+    //   ];
 
-      const currentItems = newsItems.slice(indexOfFirstItem, indexOfLastItem);
-      const totalPages = Math.ceil(newsItems.length / itemsPerPage);
+      const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+      const totalPages = Math.ceil(data.length / itemsPerPage);
 
       const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
