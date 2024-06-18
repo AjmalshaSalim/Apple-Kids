@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Contactform() {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+      });
+
+
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      };
+
+      
+      const handleSubmit=(e)=>{
+          e.preventDefault();
+          console.log('formdata:' ,formData)
+      }
+
+
+
   return (
     <div className='min-h-[600px] bg-[#FCF2D9]'>
         <div className='grid md:grid-cols-2 p-10 space-x-20 '>
@@ -15,12 +40,15 @@ function Contactform() {
                   </div>
 
 
-
+            
                    <div className='2xl:w-[520px] w-full '>
                     <div className='space-y-2 '>
                     <label className='font-fredoka'> Name</label>
                    <input 
                             type='text'
+                            name='name'
+                            value={formData.name}
+                            onChange={handleChange}
                             className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
@@ -37,7 +65,10 @@ function Contactform() {
                     <div className='space-y-2'>
                     <label  className='font-fredoka'>phone</label>
                     <input 
-                            type='text'
+                           type='text'
+                           name='phone'
+                           value={formData.phone}
+                           onChange={handleChange}
                             className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
@@ -45,6 +76,9 @@ function Contactform() {
                     <label  className='font-fredoka'>email</label>
                     <input 
                             type='text'
+                            name='email'
+                            value={formData.email}
+                            onChange={handleChange}
                             className='w-full px-3 py-2 rounded-lg shadow-sm border-none focus:ring-0 ' 
                         />
                     </div>
@@ -57,21 +91,24 @@ function Contactform() {
                     <div className='space-y-2'>
                         <label className='font-fredoka'>How can we help you?</label>
                     <textarea 
+                            name='message'
+                            value={formData.message}
+                            onChange={handleChange}
                             className='w-full px-3 py-2 border-none rounded-lg shadow-sm h-32 focus:ring-0 ' 
                         />
                     </div>
                     <div className=' flex mt-4 md:justify-start justify-center  '>
-                    <button className='bg-[#E21D26] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg font-fredoka'>
+                    <button onClick={handleSubmit} className='bg-[#E21D26] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg font-fredoka'>
                         Send Message
                         </button>
                     </div>
                    
                    </div>
 
+          
+
 
             </div>
-
-
 
 
 
