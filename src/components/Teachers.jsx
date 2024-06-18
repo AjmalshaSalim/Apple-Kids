@@ -1,30 +1,31 @@
 import React from 'react'
+import profile from '../assets/images/profile.png'
 
 const teachers = [
   {
     name: 'Bushra Basheer',
     subject: 'Principal',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4Yrvkzk-tPEJgHl4FVdzStqNvTQ4qwsrO86RR5eZPyezwUqG',
+    image:profile,
   },
   {
-    name: 'Shaika Aysha ',
+    name: 'Shieka Aysha ',
     subject: 'Academic Coordinator',
-    image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV1F_ukZOj3wfq2riV2TnAgEWGiiIaQwBY3P1C646dWdtmfy8m',
+    image: profile,
   },
   {
     name: 'Afsana',
     subject: 'Montessori',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTnstAqmulCYiDEgXUCMVlrUx0LfYJL3y3pOrApiL7taL18x1',
+    image:profile,
   },
   {
     name: 'Amina',
     subject: 'CTTC',
-    image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWNYnFSuFmQ1lZBkMlUYBEa-7mnwEGyB6dgYOUsju8ZkhRZAbH',
+    image: profile,
   },
   {
     name: 'Fathima',
     subject: 'Dheeniyath',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiTnstAqmulCYiDEgXUCMVlrUx0LfYJL3y3pOrApiL7taL18x1',
+    image: profile,
   },
 ];
 

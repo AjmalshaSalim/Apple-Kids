@@ -165,25 +165,25 @@ function Gallery() {
       <div className=' bg-[#F06D4F] h-12 px-6 rounded-md flex justify-center items-center'>
         <ul className='flex flex-row space-x-6 gap-4' >
         <li
-              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'all' ? 'text-gray-950' : ''}`}
+              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'all' ? 'text-black' : ''}`}
               onClick={() => setFilter('all')}
             >
               All
             </li>
             <li
-              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'office' ? 'text-gray-950' : ''}`}
+              className={`text-white font-fredoka text-xl  cursor-pointer ${filter === 'office' ? 'text-black' : ''}`}
               onClick={() => setFilter('office')}
             >
               Office
             </li>
             <li
-              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'playing' ? 'text-gray-950' : ''}`}
+              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'playing' ? 'text-black' : ''}`}
               onClick={() => setFilter('playing')}
             >
               Playing
             </li>
             <li
-              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'sitting' ? 'text-gray-950' : ''}`}
+              className={`text-white font-fredoka  text-xl  cursor-pointer ${filter === 'sitting' ? 'text-black' : ''}`}
               onClick={() => setFilter('sitting')}
             >
               Sitting

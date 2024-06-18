@@ -49,7 +49,7 @@ const testimonials = [
 ];
 
 function Feedback() {
-  const[testimonials,setTestimonials]=useState([])
+  // const[testimonials,setTestimonials]=useState([])
 
   useEffect(()=>{
     const fetchTestimonial=async()=>{
@@ -61,7 +61,7 @@ function Feedback() {
   },[])
    
   return (
-    <div className='min-h-[300px]'>
+    <div className='min-h-[400px]'>
   <div className=" py-12">
     <div className="container mx-auto px-4">
       <h2 className="text-4xl font-bold text-center  mb-8 font-fredoka">what parents say</h2>
