@@ -9,6 +9,8 @@ function Contactform() {
         message: ''
       });
 
+      const[errorMsg,setErrorMsg]=useState('')
+
 
       const handleChange = (e) => {
         const { name, value } = e.target;
@@ -21,6 +23,11 @@ function Contactform() {
       
       const handleSubmit=(e)=>{
           e.preventDefault();
+
+          if(!formData.name || !formData.phone || ! formData.email || !formData.message){
+            setErrorMsg('All fields are required *')
+          }
+
           console.log('formdata:' ,formData)
       }
 
@@ -97,11 +104,17 @@ function Contactform() {
                             className='w-full px-3 py-2 border-none rounded-lg shadow-sm h-32 focus:ring-0 ' 
                         />
                     </div>
+                    <div className='mt-2'>
+                    {setErrorMsg && <p className='text-red-600 '>{errorMsg}</p>}
+                    </div>
+                    
                     <div className=' flex mt-4 md:justify-start justify-center  '>
                     <button onClick={handleSubmit} className='bg-[#E21D26] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg font-fredoka'>
                         Send Message
                         </button>
                     </div>
+
+                    
                    
                    </div>
 
