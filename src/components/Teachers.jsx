@@ -3,7 +3,7 @@ import profile from '../assets/images/profile.png'
 
 const teachers = [
   {
-    name: 'Bushra Basheer',
+    name: 'Bushra. B. A',
     subject: 'Principal',
     image:profile,
   },

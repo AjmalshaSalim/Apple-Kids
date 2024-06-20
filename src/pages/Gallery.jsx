@@ -126,7 +126,7 @@ function Gallery() {
       </div>
            
                 <p className='text-base sm:text-lg md:text-xl font-league-spartan sm:w-[350px] w-[300px]  '>
-                Get the right mortgage to buy your new home — or refinance to take advantage of low rates or convert equity into cash. We've got the personal service to guide you along the way.
+                Welcome to our gallery! Here, you'll find a delightful collection of moments captured during our daily activities, special events, and celebrations. From creative arts and crafts to exciting outdoor adventures, our gallery showcases the joy and learning experiences of our little ones.
               </p>
             </div>
 
