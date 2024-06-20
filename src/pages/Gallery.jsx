@@ -89,7 +89,7 @@ function Gallery() {
       
       try {
         const response=await api.get('/gallery')
-        console.log(response.data.photos)
+        console.log(response)
         setData(response.data.photos)
       } catch (error) {
         console.log(error)

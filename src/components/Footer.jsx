@@ -20,7 +20,7 @@ function Footer() {
          <div className='flex flex-col space-y-6 justify-start items-center sm:p-2 p-4 '>
                <img  src={logo} alt='logo' className='md:w-[100px] md:h-[100px] w-[50px] h-[50px]' />
       <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-league-spartan">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat libero illo beatae, aspernatur dignissimos quas consequuntur fuga quidem ad quisquam optio obcaecat.
+      premier Montessori school offering a nurturing and dynamic environment for early childhood education. Join us at Apple Kids, where we lay the foundation for a lifetime of learning and ethical living.
       </p>
                    
                 </div> 

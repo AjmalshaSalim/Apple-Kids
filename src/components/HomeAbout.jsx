@@ -13,7 +13,7 @@ function HomeAbout() {
         <div className='flex flex-col justify-center sm:items-start items-center gap-6 p-4 sm:ml-[200px] '>
             <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold  font-fredoka  '>Education <br />through play!</h1>
                 <p className='text-base sm:text-lg md:text-xl font-league-spartan w-[350px] sm:p-0 p-4 '>
-    Get the right mortgage to buy your new home — or refinance to take advantage of low rates or convert equity into cash. We've got the personal service to guide you along the way.
+                stress free, child centred and holistic education to all students without compromising on quality and helps each child to develop one’s innate talents and abilities. We, Apple Kindergarten, family believes in providing a positive and conducive environment for the growth of the child. The back bone and support system in our school is the faculty. The highly qualified faculty members are extremely well-versed in the up to date methodologies that form an integral feature of education system.
   </p>
             <Link to='/about' >
             <button className='bg-[#E21D26] hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg'>

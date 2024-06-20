@@ -17,9 +17,10 @@ function Imagesection() {
         </div>
         
         <div className='flex flex-col justify-center  sm:items-start items-center gap-6 p-4  '>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold  font-fredoka  '>A Diverse and  <br />Inclusive Community</h1>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold  font-fredoka  '>Welcome to Apple Kids</h1>
                 <p className='text-base sm:text-lg md:text-xl font-league-spartan w-[350px] sm:p-0 p-4 '>
-    Get the right mortgage to buy your new home — or refinance to take advantage of low rates or convert equity into cash. We've got the personal service to guide you along the way.
+                a premier Montessori school offering a nurturing and dynamic environment for early childhood education. Our focus spans Kindergarten through comprehensive moral and model education, enriched with Islamic knowledge and Deeniyath, yet welcoming students of all faiths. We provide moral studies for non-Muslim students, fostering an inclusive atmosphere.
+
   </p>
             </div>
         </div>

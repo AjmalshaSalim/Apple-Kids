@@ -6,26 +6,26 @@ function Homecards() {
     {
       id: 1,
       imgSrc: "https://img.icons8.com/ios/50/178E18/light-on--v1.png",
-      title: "Active Learning",
-      description: "This is a card description. Add some text here to describe the content of the card."
+      title: "Engaging Curriculum",
+      description: "Combining academics with hands-on activities and moral teachings."
     },
     {
       id: 2,
       imgSrc: "https://img.icons8.com/ios/50/E63535/star--v1.png",
-      title: "Expert Teachers",
-      description: "This is a card description. Add some text here to describe the content of the card."
+      title: "Islamic Environment",
+      description: "Cultivating values of respect and understanding"
     },
     {
       id: 3,
       imgSrc: "https://img.icons8.com/neon/96/thumb-up.png",
-      title: "Strategy Teachers",
-      description: "This is aStrategy Teachers card description. Add some text here to describe the content of the card."
+      title: "Montessori Methodology",
+      description: " Promoting curiosity, independence, and a love for learning."
     },
     {
       id: 4,
       imgSrc: "https://img.icons8.com/fluency-systems-regular/48/35CCE6/confetti.png",
-      title: "Full Day Programs",
-      description: "This is a card description. Add some text here to describe the content of the card."
+      title: "Experienced Educators",
+      description: "Dedicated to each child's academic, social, and emotional growth."
     }
   ];
 
