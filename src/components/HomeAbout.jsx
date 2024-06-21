@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import bg from '../assets/images/svg-element-9.svg'
-import och from '../assets/images/svg-element-9.svg'
+import kids from '../assets/images/dr3.jpg'
 
 function HomeAbout() {
   return (
@@ -27,7 +27,8 @@ function HomeAbout() {
 
         <div className='flex items-center lg:justify-start  justify-center bg-no-repeat bg-right-bottom' style={{backgroundImage:`url(${bg})`,backgroundSize:'600px 400px'}} >
         <img
-            src='https://images.pexels.com/photos/8363027/pexels-photo-8363027.jpeg?auto=compress&cs=tinysrgb&w=600'
+            // src='https://images.pexels.com/photos/8363027/pexels-photo-8363027.jpeg?auto=compress&cs=tinysrgb&w=600'
+            src={kids}
             alt='kids pic'
             className=' sm:w-2/3  sm:h-80 w-64  rounded-3xl '
         />

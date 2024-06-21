@@ -1,4 +1,5 @@
 import React from 'react'
+import kids2 from '../../assets/images/group.jpg'
 
 function Card() {
   return (
@@ -57,7 +58,10 @@ function Card() {
 
 
             <div className='bg-pink-800 w-1/2 lg:block hidden'>
-                <img src='https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600' alt='kidabout' className='w-full h-full' />
+                <img 
+                // src='https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600' 
+                src={kids2}
+                alt='kidabout' className='w-full h-full' />
             </div>
         </div>
     </div>
