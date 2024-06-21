@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import api from '../../api/api'
+import contact from '../../assets/images/contact.jpg'
 
 function Contactform() {
 
@@ -133,7 +134,10 @@ function Contactform() {
                backgroundPosition:  ' right bottom',
                backgroundSize:'400px 400px' 
             }}>
-                <img src='https://images.pexels.com/photos/5088188/pexels-photo-5088188.jpeg?auto=compress&cs=tinysrgb&w=600' alt='contact' className='h-[490px] rounded-br-[100px] rounded-bl-[20px] rounded-tl-[20px] rounded-tr-[20px]'/>
+                <img
+                //  src='https://images.pexels.com/photos/5088188/pexels-photo-5088188.jpeg?auto=compress&cs=tinysrgb&w=600'
+                src={contact}
+                  alt='contact' className='h-[490px] rounded-br-[100px] rounded-bl-[20px] rounded-tl-[20px] rounded-tr-[20px]'/>
             </div>
            
 
