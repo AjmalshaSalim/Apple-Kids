@@ -65,7 +65,7 @@ function Homegallery() {
           {data.map((item) => (
             <div key={item.id} className="bg-white p-4 rounded-lg shadow-lg  transform transition-transform duration-300 hover:scale-105">
               <img
-                src={`http://192.168.29.80:8000/api/uploads/gallary/${item.name}`}
+               src={`https://admin.applekidskindergarten.com/uploads/gallary/${item.name}`}
                 alt={item.id}
                 className="w-full h-64 object-cover rounded-lg"
                 loading="lazy"

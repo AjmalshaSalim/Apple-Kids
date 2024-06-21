@@ -205,7 +205,7 @@ function Gallery() {
           {currentItems.map((item) => (
             <div key={item.id} className="bg-white p-4 rounded-lg shadow-lg">
               <img
-                src={item.name}
+                src={`https://admin.applekidskindergarten.com/uploads/gallary/${item.name}`}
                 alt={item.id}
                 className="w-full h-64 object-cover rounded-lg"
                 loading="lazy"

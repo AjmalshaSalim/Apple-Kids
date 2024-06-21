@@ -102,7 +102,8 @@ function Events() {
     <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       {currentItems.map((item) => (
         <div key={item.id} className="bg-white p-6 rounded-lg shadow-lg border border-red-200 hover:border-red-600 transition duration-300 ease-in-out">
-          <img   src={`http://192.168.29.80:8000/api/uploads/gallary/${item.file}`} alt={item.title} className="w-full h-48 object-cover rounded-t-lg border-b border-gray-200" />
+          <img   src={`https://admin.applekidskindergarten.com/uploads/forms/${item.
+file}`} alt={item.title} className="w-full h-48 object-cover rounded-t-lg border-b border-gray-200" />
           <div className="mt-4">
             <h3 className="text-2xl font-bold text-gray-800">{item.title}</h3>
             <p className="text-gray-600">{item.date}</p>

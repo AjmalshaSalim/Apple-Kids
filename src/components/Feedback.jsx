@@ -82,7 +82,7 @@ function Feedback() {
             <div className="bg-white p-6 rounded-lg border-2 gap-2  shadow-lg flex flex-col justify-between hover:shadow-lg transform hover:-translate-y-1 transition duration-300">
               <div className="flex items-center mb-4">
                 <img
-                  src={testimonial.image}
+                  src={`https://admin.applekidskindergarten.com/uploads/testmonial/${testimonial.image}`}
                   alt={testimonial.name}
                   className="w-16 h-16 rounded-full mr-4"
                 />

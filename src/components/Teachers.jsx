@@ -6,11 +6,13 @@ const teachers = [
     name: 'Bushra. B. A',
     subject: 'Principal',
     image:profile,
+    exp:"25 years in India & abroad"
   },
   {
     name: 'Shieka Aysha ',
     subject: 'Academic Coordinator',
     image: profile,
+    exp:"2 year"
   },
   {
     name: 'Afsana',
@@ -59,6 +61,7 @@ function Teachers() {
         />
         <h2 className='text-xl font-bold text-center mt-4 font-fredoka'>{teacher.name}</h2>
         <p className='text-center text-[#379E3B] font-fredoka'>{teacher.subject}</p>
+        {/* <p className='text-center text-[#0e2b0e] font-fredoka'>{teacher.exp}</p> */}
       </div>
     ))}
   </div>
