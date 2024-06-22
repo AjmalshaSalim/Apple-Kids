@@ -11,10 +11,10 @@ function Navbar() {
         };
   return (
     <>
-    <div className='min-h-[100px] grid sm:grid-cols-12 sm:w-auto w-full'>
+    <div className='min-h-[100px] grid sm:grid-cols-12 sm:w-auto w-full  overflow-hidden '>
         {/* titleSection */}
         <div className='flex sm:justify-start items-center sm:p-4 justify-between p-4 sm:col-span-5'>
-          <a href="https://los-ninos.cmsmasters.net/los-ninos" className="elementor-widget-cmsmasters-site-logo__link" rel="nofollow">
+          <a href="/" className="elementor-widget-cmsmasters-site-logo__link" rel="nofollow">
             {/* <img
               src="https://los-ninos.cmsmasters.net/los-ninos/wp-content/uploads/sites/4/2022/09/logo-main.svg"
               alt="Los Niños Main"
@@ -33,7 +33,7 @@ function Navbar() {
         </div>
 
         {/* navlinkssection */}
-        <div className={`flex-col gap-5 space-y-4 sm:space-y-0 sm:flex-row sm:space-x-10 md:justify-center justify-start items-center sm:flex ${isOpen ? 'flex' : 'hidden'} sm:block sm:p-4 sm:col-span-7`}>
+        <div className={`flex-col gap-5 space-y-4 sm:space-y-0 sm:flex-row lg:space-x-10 md:space-x-4 sm:space-x-2 md:justify-center justify-start items-center sm:flex ${isOpen ? 'flex' : 'hidden'} sm:block sm:p-4 sm:col-span-7`}>
          
         <Link to="/">
           <h3 className='text-lg font-bold  font-fredoka'>Home</h3>
